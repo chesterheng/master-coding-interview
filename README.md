@@ -20,6 +20,7 @@
     - [Exercise: Big O Calculation 2](#exercise-big-o-calculation-2)
     - [Solution: Big O Calculation 2](#solution-big-o-calculation-2)
     - [Simplifying Big O](#simplifying-big-o)
+    - [Big O Rule 1](#big-o-rule-1)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -334,10 +335,48 @@ anotherFunChallenge(5);
 
 Rule Book
 
-1. Worst Case: n 
+1. Worst Case
 2. Remove Constants
 3. Different terms for inputs
 4. Drop Non Dominants
+
+**[⬆ back to top](#table-of-contents)**
+
+### Big O Rule 1
+
+```javascript
+// Worst Case: n
+const fish = ['dory', 'bruce', 'marlin', 'nemo']
+const nemo = ['nemo']
+const everyone = [
+  'dory',
+  'bruce',
+  'marlin',
+  'nemo',
+  'gill',
+  'bloat',
+  'nigel',
+  'squirt',
+  'darla',
+  'hank',
+]
+const large = new Array(100000).fill('nemo')
+
+const findNemo = (fish) => {
+  let t0 = performance.now()
+  for (let i = 0; i < fish.length; i++) {
+    console.log('running')
+    if (fish[i] === 'nemo') {
+      console.log('Found NEMO!');
+      break;
+    }
+  }
+  let t1 = performance.now()
+  console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
+}
+
+findNemo(large)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
