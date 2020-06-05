@@ -1,4 +1,5 @@
 # Master the Coding Interview: Data Structures + Algorithms
+
 ## Table of contents
 
 - [Master the Coding Interview: Data Structures + Algorithms](#master-the-coding-interview-data-structures--algorithms)
@@ -12,6 +13,8 @@
   - [**Section 3: Big O**](#section-3-big-o)
     - [Setting Up Your Environment](#setting-up-your-environment)
     - [What Is Good Code?](#what-is-good-code)
+    - [O(n)](#on)
+    - [O(1)](#o1)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -96,7 +99,7 @@ Resources
 - [Engineering Resume Templates](https://www.cakeresume.com/Engineering-resume-samples)
 - [This resume does not exist](https://thisresumedoesnotexist.com/)
 
-Resume 
+Resume
 
 - One Page
 - Relevant Skills
@@ -141,6 +144,7 @@ Resume
 
 - [Repl.it](https://repl.it/)
 - [glot.io](https://glot.io/)
+- [RunJS](https://runjs.dev/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -155,32 +159,66 @@ Python, C/C++, Golang, Swift and JavaScript Solutions!
 
 ### What Is Good Code?
 
+[Big O Cheat Sheet](BigOCheatSheet.pdf)
+
 - Readable
 - Scalable [Big O]
   - x-axis: Elements, y-axis: Operations
   - Excellent, Good: O(log n), O(1)
   - Fair: O(n)
-  - Bad: O(nlog n) 
+  - Bad: O(nlog n)
   - Horrible: O(n^2), O(2^n), O(n!)
 
-```javascript
-const fish = ['dory', 'bruce', 'marlin', 'nemo'];
-const nemo = ['nemo'];
-const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
-const large = new Array(100000).fill('nemo');
+**[⬆ back to top](#table-of-contents)**
 
-const findNemo = fish => {
-  let t0 = performance.now();
-  for (let i = 0; i < fish.length; i++) {
-    if (fish[i] === 'nemo') {
-      console.log('Found NEMO!'); 
-    }
-  }
-  let t1 = performance.now();
-  console.log("Call to find Nemo took " + (t1 - t0) + " milliseconds.");
+### O(n)
+
+```javascript
+// O(n): Linear time
+const fish = ['dory', 'bruce', 'marlin', 'nemo']
+const nemo = ['nemo']
+const everyone = [
+	'dory',
+	'bruce',
+	'marlin',
+	'nemo',
+	'gill',
+	'bloat',
+	'nigel',
+	'squirt',
+	'darla',
+	'hank',
+]
+const large = new Array(100000).fill('nemo')
+
+const findNemo = (fish) => {
+	let t0 = performance.now()
+	for (let i = 0; i < fish.length; i++) {
+		if (fish[i] === 'nemo') {
+			console.log('Found NEMO!')
+		}
+	}
+	let t1 = performance.now()
+	console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
 }
 
 findNemo(large)
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### O(1)
+
+```javascript
+// O(1): Constant time
+const boxes = [0, 1, 2, 3, 4, 5]
+
+const logFirstTwoBoxes = (boxes) => {
+	console.log(boxes[0]) // O(1)
+	console.log(boxes[1]) // O(1)
+}
+
+logFirstTwoBoxes(boxes) // O(2)
 ```
 
 **[⬆ back to top](#table-of-contents)**
