@@ -8,6 +8,7 @@
     - [Portfolio](#portfolio)
     - [Where To Find Jobs?](#where-to-find-jobs)
   - [**Section 3: Big O**](#section-3-big-o)
+    - [Setting Up Your Environment](#setting-up-your-environment)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -130,6 +131,11 @@ Resume
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 3: Big O**
+
+### Setting Up Your Environment
+
+- [Repl.it](https://repl.it/)
+- [glot.io](https://glot.io/)
 
 **[⬆ back to top](#table-of-contents)**
 
