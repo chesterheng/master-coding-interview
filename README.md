@@ -1,6 +1,8 @@
 # Master the Coding Interview: Data Structures + Algorithms
+## Table of contents
 
 - [Master the Coding Interview: Data Structures + Algorithms](#master-the-coding-interview-data-structures--algorithms)
+  - [Table of contents](#table-of-contents)
   - [**Section 1: Introduction**](#section-1-introduction)
   - [**Section 2: Getting More Interviews**](#section-2-getting-more-interviews)
     - [Resume](#resume)
@@ -9,6 +11,7 @@
     - [Where To Find Jobs?](#where-to-find-jobs)
   - [**Section 3: Big O**](#section-3-big-o)
     - [Setting Up Your Environment](#setting-up-your-environment)
+    - [What Is Good Code?](#what-is-good-code)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -71,6 +74,8 @@ Tech Track
 - Data Structures
 - Algorithms
 - Extra Coding Exercises
+
+**[⬆ back to top](#table-of-contents)**
 
 ## **Section 2: Getting More Interviews**
 
@@ -145,6 +150,38 @@ Python, C/C++, Golang, Swift and JavaScript Solutions!
 - [C/C++](https://github.com/shree1999/Data-Structures-and-Algorithms)
 - [Golang](https://github.com/punitpandey/DS-Algo)
 - [Swift](https://github.com/preetamjadakar/datastructures-swift)
+
+**[⬆ back to top](#table-of-contents)**
+
+### What Is Good Code?
+
+- Readable
+- Scalable [Big O]
+  - x-axis: Elements, y-axis: Operations
+  - Excellent, Good: O(log n), O(1)
+  - Fair: O(n)
+  - Bad: O(nlog n) 
+  - Horrible: O(n^2), O(2^n), O(n!)
+
+```javascript
+const fish = ['dory', 'bruce', 'marlin', 'nemo'];
+const nemo = ['nemo'];
+const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
+const large = new Array(100000).fill('nemo');
+
+const findNemo = fish => {
+  let t0 = performance.now();
+  for (let i = 0; i < fish.length; i++) {
+    if (fish[i] === 'nemo') {
+      console.log('Found NEMO!'); 
+    }
+  }
+  let t1 = performance.now();
+  console.log("Call to find Nemo took " + (t1 - t0) + " milliseconds.");
+}
+
+findNemo(large)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
