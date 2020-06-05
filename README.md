@@ -15,6 +15,8 @@
     - [What Is Good Code?](#what-is-good-code)
     - [O(n)](#on)
     - [O(1)](#o1)
+    - [Exercise: Big O Calculation](#exercise-big-o-calculation)
+    - [Solution: Big O Calculation](#solution-big-o-calculation)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -219,6 +221,51 @@ const logFirstTwoBoxes = (boxes) => {
 }
 
 logFirstTwoBoxes(boxes) // O(2)
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Big O Calculation
+
+```javascript
+// What is the Big O of the below function? 
+// Hint, you may want to go line by line
+const funChallenge = (input) => {
+	let a = 10
+	a = 50 + 3
+
+	for (let i = 0; i < input.length; i++) {
+		anotherFunction()
+		let stranger = true
+		a++
+	}
+	return a
+}
+
+funChallenge()
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Solution: Big O Calculation
+
+```javascript
+const funChallenge = input => {
+  let a = 10; // O(1)
+  a = 50 + 3; // O(1)
+
+  for (let i = 0; i < input.length; i++) {  // O(n)
+    anotherFunction(); // O(n)
+    let stranger = true; // O(n)
+    a++; // O(n)
+  }
+  return a; // O(1)
+}
+
+// 1 + 1 + 1 + n + n + n + n
+// Big O(3 + 4n)
+// O(n)
+funChallenge ();
 ```
 
 **[⬆ back to top](#table-of-contents)**
