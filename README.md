@@ -3,6 +3,7 @@
 - [Master the Coding Interview: Data Structures + Algorithms](#master-the-coding-interview-data-structures--algorithms)
   - [**Section 1: Introduction**](#section-1-introduction)
   - [**Section 2: Getting More Interviews**](#section-2-getting-more-interviews)
+    - [Resume](#resume)
   - [**Section 3: Big O**](#section-3-big-o)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
@@ -68,6 +69,19 @@ Tech Track
 - Extra Coding Exercises
 
 ## **Section 2: Getting More Interviews**
+
+### Resume
+
+[ResumeMaker.Online](https://www.resumemaker.online/)
+[Resume Cheat Sheet](https://github.com/aneagoie/resume-checklist)
+[Jobscan](https://www.jobscan.co/)
+[Engineering Resume Templates](https://www.cakeresume.com/Engineering-resume-samples)
+[This resume does not exist](https://thisresumedoesnotexist.com/)
+
+- One Page
+- Relevant Skills
+- Personalized
+- Online Link
 
 **[⬆ back to top](#table-of-contents)**
 
