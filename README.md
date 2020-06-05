@@ -4,6 +4,9 @@
   - [**Section 1: Introduction**](#section-1-introduction)
   - [**Section 2: Getting More Interviews**](#section-2-getting-more-interviews)
     - [Resume](#resume)
+    - [What If I Don't Have Enough Experience?](#what-if-i-dont-have-enough-experience)
+    - [Portfolio](#portfolio)
+    - [Where To Find Jobs?](#where-to-find-jobs)
   - [**Section 3: Big O**](#section-3-big-o)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
@@ -70,18 +73,59 @@ Tech Track
 
 ## **Section 2: Getting More Interviews**
 
+- Resume
+- LinkedIn
+- Portfolio
+- Email
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Resume
 
-[ResumeMaker.Online](https://www.resumemaker.online/)
-[Resume Cheat Sheet](https://github.com/aneagoie/resume-checklist)
-[Jobscan](https://www.jobscan.co/)
-[Engineering Resume Templates](https://www.cakeresume.com/Engineering-resume-samples)
-[This resume does not exist](https://thisresumedoesnotexist.com/)
+Resources
+
+- [ResumeMaker.Online](https://www.resumemaker.online/)
+- [Resume Cheat Sheet](https://github.com/aneagoie/resume-checklist)
+- [Jobscan](https://www.jobscan.co/)
+- [Engineering Resume Templates](https://www.cakeresume.com/Engineering-resume-samples)
+- [This resume does not exist](https://thisresumedoesnotexist.com/)
+
+Resume 
 
 - One Page
 - Relevant Skills
 - Personalized
 - Online Link
+
+**[⬆ back to top](#table-of-contents)**
+
+### What If I Don't Have Enough Experience?
+
+[Creative Tim](https://www.creative-tim.com/)
+[Free HTML templates](http://www.mashup-template.com/)
+[Medium](https://medium.com/)
+
+- GitHub
+- Website
+- 1 - 2 Big Projects
+- Blog
+
+**[⬆ back to top](#table-of-contents)**
+
+### Portfolio
+
+- [Creative Tim](https://www.creative-tim.com/)
+- [HTML5/CSS3 Free Templates](http://www.mashup-template.com/templates.html)
+- [ZtM-Job-Board](https://github.com/zero-to-mastery/ZtM-Job-Board)
+- [Landing page templates for startups](https://cruip.com/)
+- [Free Bootstrap Templates & Themes](https://mdbootstrap.com/freebies/)
+- [15 Web Developer Portfolios to Inspire You](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Where To Find Jobs?
+
+[Where To Find Jobs?](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12111418#content)
 
 **[⬆ back to top](#table-of-contents)**
 
