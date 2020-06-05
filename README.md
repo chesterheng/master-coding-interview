@@ -25,6 +25,7 @@
     - [Big O Rule 3 - Different terms for inputs](#big-o-rule-3---different-terms-for-inputs)
     - [O(n^2)](#on2)
     - [Big O Rule 4 - Drop Non Dominants](#big-o-rule-4---drop-non-dominants)
+    - [What Does This All Mean?](#what-does-this-all-mean)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -470,6 +471,12 @@ const printAllNumbersThenAllPairSums = (numbers) => {
 
 printAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### What Does This All Mean?
+
+Data Structures + Algorithms = Programs
 
 **[⬆ back to top](#table-of-contents)**
 
