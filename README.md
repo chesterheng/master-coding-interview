@@ -139,6 +139,15 @@ Resume
 
 **[⬆ back to top](#table-of-contents)**
 
+Python, C/C++, Golang, Swift and JavaScript Solutions!
+
+- [Python](https://github.com/theja-m/Data-Structures-and-Algorithms)
+- [C/C++](https://github.com/shree1999/Data-Structures-and-Algorithms)
+- [Golang](https://github.com/punitpandey/DS-Algo)
+- [Swift](https://github.com/preetamjadakar/datastructures-swift)
+
+**[⬆ back to top](#table-of-contents)**
+
 ## **Section 4: How To Solve Coding Problems**
 
 **[⬆ back to top](#table-of-contents)**
