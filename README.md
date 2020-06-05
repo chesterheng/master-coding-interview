@@ -22,6 +22,7 @@
     - [Simplifying Big O](#simplifying-big-o)
     - [Big O Rule 1 - Worst Case](#big-o-rule-1---worst-case)
     - [Big O Rule 2 - Remove Constants](#big-o-rule-2---remove-constants)
+    - [Big O Rule 3 - Different terms for inputs](#big-o-rule-3---different-terms-for-inputs)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -392,8 +393,8 @@ const printFirstItemThenFirstHalfThenSayHi100Times = items => {
   // O(1)
   console.log(items[0]); 
 
-  var middleIndex = Math.floor(items.length / 2);
-  var index = 0;
+  const middleIndex = Math.floor(items.length / 2);
+  const index = 0;
 
   // O(n/2)
   while (index < middleIndex) {
@@ -402,10 +403,25 @@ const printFirstItemThenFirstHalfThenSayHi100Times = items => {
   }
 
   // O(100)
-  for (var i = 0; i < 100; i++) {
+  for (let i = 0; i < 100; i++) {
     console.log('hi');  
   }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Big O Rule 3 - Different terms for inputs
+
+```javascript
+// boxes, boxes2 are 2 different terms for inputs
+// Big O(a + b)
+const compressBoxesTwice = (boxes, boxes2) => {
+  boxes.forEach(box => console.log(box));  // O(a)
+  boxes2.forEach(box => console.log(box));  // O(b)
+}
+
+compressBoxesTwice([1, 2, 3], [4, 5])
 ```
 
 **[⬆ back to top](#table-of-contents)**
