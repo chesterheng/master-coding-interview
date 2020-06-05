@@ -1,6 +1,7 @@
 # Master the Coding Interview: Data Structures + Algorithms
 
 - [Master the Coding Interview: Data Structures + Algorithms](#master-the-coding-interview-data-structures--algorithms)
+  - [**Section 1: Introduction**](#section-1-introduction)
   - [**Section 2: Getting More Interviews**](#section-2-getting-more-interviews)
   - [**Section 3: Big O**](#section-3-big-o)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
@@ -32,6 +33,39 @@
   - [**Section 20: Contributing To Open Source To Gain Experience**](#section-20-contributing-to-open-source-to-gain-experience)
   - [**Section 21: Bonus: Extra Bits**](#section-21-bonus-extra-bits)
   - [**Section 22: Extras**](#section-22-extras)
+
+## **Section 1: Introduction**
+
+[Interview Mind Map](https://coggle.it/diagram/W5u8QkZs6r4sZM3J/t/master-the-interview)
+
+- Getting the Interview
+- Big O Notation
+- Technical Interviews
+- Non Technical Interviews
+- Offer + Negotiation
+
+[Technical Interview Mind Map](https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link)
+
+- Data Structures
+- Algorithms
+
+Fast Track
+
+- Getting The Interview
+- Non Technical Interview
+- Offer + Negotiation
+
+Complete
+
+- Everything
+
+Tech Track
+
+- Big O
+- How To Solve Problems
+- Data Structures
+- Algorithms
+- Extra Coding Exercises
 
 ## **Section 2: Getting More Interviews**
 
