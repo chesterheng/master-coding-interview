@@ -23,6 +23,7 @@
     - [Big O Rule 1 - Worst Case](#big-o-rule-1---worst-case)
     - [Big O Rule 2 - Remove Constants](#big-o-rule-2---remove-constants)
     - [Big O Rule 3 - Different terms for inputs](#big-o-rule-3---different-terms-for-inputs)
+    - [O(n^2)](#on2)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -422,6 +423,25 @@ const compressBoxesTwice = (boxes, boxes2) => {
 }
 
 compressBoxesTwice([1, 2, 3], [4, 5])
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### O(n^2)
+
+```javascript
+// Big O(n * n)
+// Big O(n^2) - Quadratic Time
+const boxes = ['a', 'b', 'c', 'd', 'e'];
+const logAllPairsOfArray = array => {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j])
+    }
+  }
+}
+
+logAllPairsOfArray(boxes)
 ```
 
 **[⬆ back to top](#table-of-contents)**
