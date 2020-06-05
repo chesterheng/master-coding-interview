@@ -19,6 +19,7 @@
     - [Solution: Big O Calculation](#solution-big-o-calculation)
     - [Exercise: Big O Calculation 2](#exercise-big-o-calculation-2)
     - [Solution: Big O Calculation 2](#solution-big-o-calculation-2)
+    - [Simplifying Big O](#simplifying-big-o)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -163,7 +164,7 @@ Python, C/C++, Golang, Swift and JavaScript Solutions!
 
 ### What Is Good Code?
 
-[Big O Cheat Sheet](BigOCheatSheet.pdf)
+What Is Good Code?
 
 - Readable
 - Scalable [Big O]
@@ -172,6 +173,11 @@ Python, C/C++, Golang, Swift and JavaScript Solutions!
   - Fair: O(n)
   - Bad: O(nlog n)
   - Horrible: O(n^2), O(2^n), O(n!)
+
+Big O
+
+- [Big O Cheat Sheet](BigOCheatSheet.pdf)
+- [What is the difference between big oh, big omega and big theta notations?](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -321,6 +327,17 @@ const anotherFunChallenge = input => {
 // Big O(n)
 anotherFunChallenge(5);
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Simplifying Big O
+
+Rule Book
+
+1. Worst Case: n 
+2. Remove Constants
+3. Different terms for inputs
+4. Drop Non Dominants
 
 **[⬆ back to top](#table-of-contents)**
 
