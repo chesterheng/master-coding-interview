@@ -17,6 +17,8 @@
     - [O(1)](#o1)
     - [Exercise: Big O Calculation](#exercise-big-o-calculation)
     - [Solution: Big O Calculation](#solution-big-o-calculation)
+    - [Exercise: Big O Calculation 2](#exercise-big-o-calculation-2)
+    - [Solution: Big O Calculation 2](#solution-big-o-calculation-2)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -180,28 +182,28 @@ Python, C/C++, Golang, Swift and JavaScript Solutions!
 const fish = ['dory', 'bruce', 'marlin', 'nemo']
 const nemo = ['nemo']
 const everyone = [
-	'dory',
-	'bruce',
-	'marlin',
-	'nemo',
-	'gill',
-	'bloat',
-	'nigel',
-	'squirt',
-	'darla',
-	'hank',
+  'dory',
+  'bruce',
+  'marlin',
+  'nemo',
+  'gill',
+  'bloat',
+  'nigel',
+  'squirt',
+  'darla',
+  'hank',
 ]
 const large = new Array(100000).fill('nemo')
 
 const findNemo = (fish) => {
-	let t0 = performance.now()
-	for (let i = 0; i < fish.length; i++) {
-		if (fish[i] === 'nemo') {
-			console.log('Found NEMO!')
-		}
-	}
-	let t1 = performance.now()
-	console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
+  let t0 = performance.now()
+  for (let i = 0; i < fish.length; i++) {
+    if (fish[i] === 'nemo') {
+      console.log('Found NEMO!')
+    }
+  }
+  let t1 = performance.now()
+  console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
 }
 
 findNemo(large)
@@ -216,8 +218,8 @@ findNemo(large)
 const boxes = [0, 1, 2, 3, 4, 5]
 
 const logFirstTwoBoxes = (boxes) => {
-	console.log(boxes[0]) // O(1)
-	console.log(boxes[1]) // O(1)
+  console.log(boxes[0]) // O(1)
+  console.log(boxes[1]) // O(1)
 }
 
 logFirstTwoBoxes(boxes) // O(2)
@@ -231,15 +233,15 @@ logFirstTwoBoxes(boxes) // O(2)
 // What is the Big O of the below function? 
 // Hint, you may want to go line by line
 const funChallenge = (input) => {
-	let a = 10
-	a = 50 + 3
+  let a = 10
+  a = 50 + 3
 
-	for (let i = 0; i < input.length; i++) {
-		anotherFunction()
-		let stranger = true
-		a++
-	}
-	return a
+  for (let i = 0; i < input.length; i++) {
+    anotherFunction()
+    let stranger = true
+    a++
+  }
+  return a
 }
 
 funChallenge()
@@ -254,7 +256,7 @@ const funChallenge = input => {
   let a = 10; // O(1)
   a = 50 + 3; // O(1)
 
-  for (let i = 0; i < input.length; i++) {  // O(n)
+  for (let i = 0; i < input.length; i++) {
     anotherFunction(); // O(n)
     let stranger = true; // O(n)
     a++; // O(n)
@@ -262,10 +264,62 @@ const funChallenge = input => {
   return a; // O(1)
 }
 
-// 1 + 1 + 1 + n + n + n + n
-// Big O(3 + 4n)
+// 1 + 1 + 1 + n + n + n
+// Big O(3 + 3n)
 // O(n)
 funChallenge ();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Big O Calculation 2
+
+```javascript
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+const anotherFunChallenge = input => {
+  let a = 5;
+  let b = 10;
+  let c = 50;
+  for (let i = 0; i < input; i++) {
+    let x = i + 1;
+    let y = i + 2;
+    let z = i + 3;
+  }
+  for (let j = 0; j < input; j++) {
+    let p = j * 2;
+    let q = j * 2;
+  }
+  let whoAmI = "I don't know";
+}
+
+anotherFunChallenge(5);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Solution: Big O Calculation 2
+
+```javascript
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+const anotherFunChallenge = input => {
+  let a = 5;  //O(1)
+  let b = 10;  //O(1)
+  let c = 50;  //O(1)
+  for (let i = 0; i < input; i++) {
+    let x = i + 1;  //O(n)
+    let y = i + 2;  //O(n)
+    let z = i + 3;  //O(n)
+  }
+  for (let j = 0; j < input; j++) {
+    let p = j * 2;  //O(n)
+    let q = j * 2;  //O(n)
+  }
+  let whoAmI = "I don't know";  //O(1)
+}
+
+// Big O(4 + 5n)
+// Big O(n)
+anotherFunChallenge(5);
 ```
 
 **[⬆ back to top](#table-of-contents)**
