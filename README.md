@@ -24,6 +24,7 @@
     - [Big O Rule 2 - Remove Constants](#big-o-rule-2---remove-constants)
     - [Big O Rule 3 - Different terms for inputs](#big-o-rule-3---different-terms-for-inputs)
     - [O(n^2)](#on2)
+    - [Big O Rule 4 - Drop Non Dominants](#big-o-rule-4---drop-non-dominants)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -179,7 +180,10 @@ What Is Good Code?
   - Horrible: O(n^2), O(2^n), O(n!)
 
 Big O
+![](Big-O_Algorithm_Complexity_Cheat_Sheet__Know_Thy_Complexities____ericdrowell.jpg)
 
+- [Know Thy Complexities](https://www.bigocheatsheet.com/)
+- [Big-O Algorithm Complexity Cheat Sheet](big-o-cheatsheet.pdf)
 - [Big O Cheat Sheet](BigOCheatSheet.pdf)
 - [What is the difference between big oh, big omega and big theta notations?](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations)
 
@@ -192,28 +196,28 @@ Big O
 const fish = ['dory', 'bruce', 'marlin', 'nemo']
 const nemo = ['nemo']
 const everyone = [
-	'dory',
-	'bruce',
-	'marlin',
-	'nemo',
-	'gill',
-	'bloat',
-	'nigel',
-	'squirt',
-	'darla',
-	'hank',
+  'dory',
+  'bruce',
+  'marlin',
+  'nemo',
+  'gill',
+  'bloat',
+  'nigel',
+  'squirt',
+  'darla',
+  'hank',
 ]
 const large = new Array(100000).fill('nemo')
 
 const findNemo = (fish) => {
-	let t0 = performance.now()
-	for (let i = 0; i < fish.length; i++) {
-		if (fish[i] === 'nemo') {
-			console.log('Found NEMO!')
-		}
-	}
-	let t1 = performance.now()
-	console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
+  let t0 = performance.now()
+  for (let i = 0; i < fish.length; i++) {
+    if (fish[i] === 'nemo') {
+      console.log('Found NEMO!')
+    }
+  }
+  let t1 = performance.now()
+  console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
 }
 
 findNemo(large)
@@ -228,8 +232,8 @@ findNemo(large)
 const boxes = [0, 1, 2, 3, 4, 5]
 
 const logFirstTwoBoxes = (boxes) => {
-	console.log(boxes[0]) // O(1)
-	console.log(boxes[1]) // O(1)
+  console.log(boxes[0])	// O(1)
+  console.log(boxes[1])	// O(1)
 }
 
 logFirstTwoBoxes(boxes) // O(2)
@@ -243,15 +247,15 @@ logFirstTwoBoxes(boxes) // O(2)
 // What is the Big O of the below function?
 // Hint, you may want to go line by line
 const funChallenge = (input) => {
-	let a = 10
-	a = 50 + 3
+  let a = 10
+  a = 50 + 3
 
-	for (let i = 0; i < input.length; i++) {
-		anotherFunction()
-		let stranger = true
-		a++
-	}
-	return a
+  for (let i = 0; i < input.length; i++) {
+    anotherFunction()
+    let stranger = true
+    a++
+  }
+  return a
 }
 
 funChallenge()
@@ -263,15 +267,15 @@ funChallenge()
 
 ```javascript
 const funChallenge = (input) => {
-	let a = 10 // O(1)
-	a = 50 + 3 // O(1)
+  let a = 10 // O(1)
+  a = 50 + 3 // O(1)
 
-	for (let i = 0; i < input.length; i++) {
-		anotherFunction() // O(n)
-		let stranger = true // O(n)
-		a++ // O(n)
-	}
-	return a // O(1)
+  for (let i = 0; i < input.length; i++) {
+    anotherFunction() // O(n)
+    let stranger = true // O(n)
+    a++ // O(n)
+  }
+  return a // O(1)
 }
 
 // 1 + 1 + 1 + n + n + n
@@ -287,19 +291,19 @@ funChallenge()
 ```javascript
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 const anotherFunChallenge = (input) => {
-	let a = 5
-	let b = 10
-	let c = 50
-	for (let i = 0; i < input; i++) {
-		let x = i + 1
-		let y = i + 2
-		let z = i + 3
-	}
-	for (let j = 0; j < input; j++) {
-		let p = j * 2
-		let q = j * 2
-	}
-	let whoAmI = "I don't know"
+  let a = 5
+  let b = 10
+  let c = 50
+  for (let i = 0; i < input; i++) {
+    let x = i + 1
+    let y = i + 2
+    let z = i + 3
+  }
+  for (let j = 0; j < input; j++) {
+    let p = j * 2
+    let q = j * 2
+  }
+  let whoAmI = "I don't know"
 }
 
 anotherFunChallenge(5)
@@ -312,19 +316,19 @@ anotherFunChallenge(5)
 ```javascript
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 const anotherFunChallenge = (input) => {
-	let a = 5 //O(1)
-	let b = 10 //O(1)
-	let c = 50 //O(1)
-	for (let i = 0; i < input; i++) {
-		let x = i + 1 //O(n)
-		let y = i + 2 //O(n)
-		let z = i + 3 //O(n)
-	}
-	for (let j = 0; j < input; j++) {
-		let p = j * 2 //O(n)
-		let q = j * 2 //O(n)
-	}
-	let whoAmI = "I don't know" //O(1)
+  let a = 5 //O(1)
+  let b = 10 //O(1)
+  let c = 50 //O(1)
+  for (let i = 0; i < input; i++) {
+    let x = i + 1 //O(n)
+    let y = i + 2 //O(n)
+    let z = i + 3 //O(n)
+  }
+  for (let j = 0; j < input; j++) {
+    let p = j * 2 //O(n)
+    let q = j * 2 //O(n)
+  }
+  let whoAmI = "I don't know" //O(1)
 }
 
 // Big O(4 + 5n)
@@ -352,30 +356,30 @@ Rule Book
 const fish = ['dory', 'bruce', 'marlin', 'nemo']
 const nemo = ['nemo']
 const everyone = [
-	'dory',
-	'bruce',
-	'marlin',
-	'nemo',
-	'gill',
-	'bloat',
-	'nigel',
-	'squirt',
-	'darla',
-	'hank',
+  'dory',
+  'bruce',
+  'marlin',
+  'nemo',
+  'gill',
+  'bloat',
+  'nigel',
+  'squirt',
+  'darla',
+  'hank',
 ]
 const large = new Array(100000).fill('nemo')
 
 const findNemo = (fish) => {
-	let t0 = performance.now()
-	for (let i = 0; i < fish.length; i++) {
-		console.log('running')
-		if (fish[i] === 'nemo') {
-			console.log('Found NEMO!')
-			break
-		}
-	}
-	let t1 = performance.now()
-	console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
+  let t0 = performance.now()
+  for (let i = 0; i < fish.length; i++) {
+    console.log('running')
+    if (fish[i] === 'nemo') {
+      console.log('Found NEMO!')
+      break
+    }
+  }
+  let t1 = performance.now()
+  console.log('Call to find Nemo took ' + (t1 - t0) + ' milliseconds.')
 }
 
 findNemo(large)
@@ -390,22 +394,22 @@ findNemo(large)
 // Big O(n/2 + 101)
 // Big O(n/2)
 // Big O(n)
-const printFirstItemThenFirstHalfThenSayHi100Times = items => {
+const printFirstItemThenFirstHalfThenSayHi100Times = (items) => {
   // O(1)
-  console.log(items[0]); 
+  console.log(items[0])
 
-  const middleIndex = Math.floor(items.length / 2);
-  const index = 0;
+  const middleIndex = Math.floor(items.length / 2)
+  const index = 0
 
   // O(n/2)
   while (index < middleIndex) {
-    console.log(items[index]);
-    index++;
+    console.log(items[index])
+    index++
   }
 
   // O(100)
   for (let i = 0; i < 100; i++) {
-    console.log('hi');  
+    console.log('hi')
   }
 }
 ```
@@ -418,8 +422,8 @@ const printFirstItemThenFirstHalfThenSayHi100Times = items => {
 // boxes, boxes2 are 2 different terms for inputs
 // Big O(a + b)
 const compressBoxesTwice = (boxes, boxes2) => {
-  boxes.forEach(box => console.log(box));  // O(a)
-  boxes2.forEach(box => console.log(box));  // O(b)
+  boxes.forEach((box) => console.log(box)) // O(a)
+  boxes2.forEach((box) => console.log(box)) // O(b)
 }
 
 compressBoxesTwice([1, 2, 3], [4, 5])
@@ -430,18 +434,41 @@ compressBoxesTwice([1, 2, 3], [4, 5])
 ### O(n^2)
 
 ```javascript
-// Big O(n * n)
-// Big O(n^2) - Quadratic Time
-const boxes = ['a', 'b', 'c', 'd', 'e'];
-const logAllPairsOfArray = array => {
+// Big O(a * b) - Quadratic Time
+const boxes = ['a', 'b', 'c', 'd', 'e']
+const logAllPairsOfArray = (array) => {
   for (let i = 0; i < array.length; i++) {
+    // O(a)
     for (let j = 0; j < array.length; j++) {
+      // O(b)
       console.log(array[i], array[j])
     }
   }
 }
 
 logAllPairsOfArray(boxes)
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Big O Rule 4 - Drop Non Dominants
+
+```javascript
+// Big O(n + n^2)
+// Drop Non Dominants -> Big O(n^2)
+const printAllNumbersThenAllPairSums = (numbers) => {
+  // O(n)
+  console.log('these are the numbers:')
+  numbers.forEach((number) => console.log(number))
+
+  // O(n^2)
+  console.log('and these are their sums:')
+  numbers.forEach((firstNumber) =>
+    numbers.forEach((secondNumber) => console.log(firstNumber + secondNumber))
+  )
+}
+
+printAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
 ```
 
 **[⬆ back to top](#table-of-contents)**
