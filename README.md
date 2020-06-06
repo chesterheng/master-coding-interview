@@ -43,6 +43,7 @@
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
     - [Arrays Introduction](#arrays-introduction)
     - [Static vs Dynamic Arrays](#static-vs-dynamic-arrays)
+    - [Implementing An Array](#implementing-an-array)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
@@ -915,6 +916,58 @@ JavaScript Array is dynamic
 | insert          | O(n)  | insert        | O(n)         |
 | delete          | O(n)  | delete        | O(n)         |
 
+**[⬆ back to top](#table-of-contents)**
+
+### Implementing An Array
+
+```javascript
+class MyArray {
+  constructor() {
+    this.length = 0;
+    this.data = {};
+  }
+  get = index => this.data[index];  // O(1)
+
+  push = item => {  
+    this.data[this.length] = item;  // O(1)
+    this.length++;
+    return this.data;
+  }
+  
+  pop = () => {
+    const lastItem = this.data[this.length - 1];  // O(1)
+    delete this.data[this.length - 1];
+    this.length--;
+    return lastItem;
+  }
+  
+  deleteAtIndex = index => {
+    const item = this.data[index];
+    this.shiftItems(index); // O(n)
+    return item;
+  }
+  
+  shiftItems = index => {
+    for (let i = index; i < this.length - 1; i++) { 
+      this.data[i] = this.data[i + 1];  // O(n)
+    }
+    delete this.data[this.length - 1];
+    this.length--;
+  }
+}
+
+const myArray = new MyArray();
+myArray.push('hi');
+myArray.push('you');
+myArray.push('!');
+myArray.get(0);
+myArray.pop();
+myArray.deleteAtIndex(0);
+myArray.push('are');
+myArray.push('nice');
+myArray.shiftItems(0);
+myArray
+```
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 7: Data Structures: Hash Tables**
