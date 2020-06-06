@@ -41,6 +41,7 @@
     - [Data Structures In Different Languages](#data-structures-in-different-languages)
     - [Operations On Data Structures](#operations-on-data-structures)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
+    - [Arrays Introduction](#arrays-introduction)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
@@ -866,6 +867,39 @@ Question
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 6: Data Structures: Arrays**
+
+### Arrays Introduction
+
+| Operation | Big O |
+| --------- | ----- |
+| lookup    | O(1)  |
+| push      | O(1)  |
+| insert    | O(n)  |
+| delete    | O(n)  |
+
+```javascript
+// 4 * 4 = 16 bytes of storage
+const strings = ['a', 'b', 'c', 'd'];
+strings[2]
+
+const numbers = [1, 2, 3, 4, 5];
+
+//push
+strings.push('e');  // O(1)
+
+//pop
+strings.pop();  // O(1)
+strings.pop();  // O(1)
+
+//unshift
+// 'x' will push all elements to their right
+// ['x', 'a', 'b', 'c', 'd'];
+//   0    1    2    3    4
+strings.unshift('x')  // O(n)
+
+//splice
+strings.splice(2, 0, 'alien');  // O(n)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
