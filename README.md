@@ -44,6 +44,7 @@
     - [Arrays Introduction](#arrays-introduction)
     - [Static vs Dynamic Arrays](#static-vs-dynamic-arrays)
     - [Implementing An Array](#implementing-an-array)
+    - [Reverse A String](#reverse-a-string)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
@@ -968,6 +969,30 @@ myArray.push('nice');
 myArray.shiftItems(0);
 myArray
 ```
+**[⬆ back to top](#table-of-contents)**
+
+### Reverse A String
+
+```javascript
+const reverse1 = (str = '') => {
+  if(!str || typeof str != 'string' || str.length < 2 ) return str;
+  
+  const backwards = [];
+  const totalItems = str.length - 1;
+  for(let i = totalItems; i >= 0; i--){
+    backwards.push(str[i]);
+  }
+  return backwards.join('');
+}
+
+const reverse2 = (str = '') => str.split('').reverse().join('');
+const reverse3 = (str = '') => [...str].reverse().join('');
+
+reverse1('Timbits Hi')
+reverse2('Timbits Hi')
+reverse3('Timbits Hi')
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 7: Data Structures: Hash Tables**
