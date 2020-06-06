@@ -31,6 +31,7 @@
     - [Space Complexity](#space-complexity)
     - [Exercise: Space Complexity](#exercise-space-complexity)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
+    - [What Are Companies Looking For?](#what-are-companies-looking-for)
     - [What We Need For Coding Interviews](#what-we-need-for-coding-interviews)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -545,19 +546,44 @@ arrayOfHiNTimes(6)
 
 ## **Section 4: How To Solve Coding Problems**
 
-### What We Need For Coding Interviews
+### What Are Companies Looking For?
 
 - Analytic Skills
   - How can you think through a problem and analyze things?
 - Coding Skills
-  - Is your code clean well organized readable?
-  - Do you understand the pros and cons of different solutions?
+  - Do you code well, by writing clean, simple, organized, readable code?
 - Technical Skills
-  - Do you know the fundamentals?
+  - Do you know the fundamentals of the job you're applying for?
+  - Do you understand the pros and cons of different solutions?
   - When you should use a certain data structure over the other?
   - Why should we use a certain algorithm over another?
 - Communication Skills
+  - Does your personality match the companies’ culture?
   - Can you communicate well with others?
+
+**[⬆ back to top](#table-of-contents)**
+
+### What We Need For Coding Interviews
+
+[Interview Cheat Sheet](InterviewCheatSheet.pdf)
+
+Data Structures
+
+- Arrays
+- Stacks
+- Queues
+- Linked Lists
+- Trees
+- Tries
+- Graphs
+- Hash tables
+
+Algorithms
+
+- Sorting
+- Dynamic Programming
+- BFS + DFS (Searching)
+- Recursion
 
 **[⬆ back to top](#table-of-contents)**
 
