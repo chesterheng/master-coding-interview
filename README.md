@@ -39,6 +39,7 @@
     - [What Is A Data Structure?](#what-is-a-data-structure)
     - [How Computers Store Data](#how-computers-store-data)
     - [Data Structures In Different Languages](#data-structures-in-different-languages)
+    - [Operations On Data Structures](#operations-on-data-structures)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
@@ -838,6 +839,9 @@ Question
 
 ### How Computers Store Data
 
+- [Computer Memory](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
+- [Registers and RAM](https://www.youtube.com/watch?v=fpnE6UAfbtU)
+
 - CPU: access RAM and Storage for information
 - RAM: fast but limited, non-persistent
 - Storage: more but slow, persistent
@@ -847,6 +851,17 @@ Question
 ### Data Structures In Different Languages
 
 [Data Structures — Language Support (Part 3)](https://medium.com/omarelgabrys-blog/data-structures-language-support-5f70f8312e84)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Operations On Data Structures
+
+- Insertion
+- Deletion
+- Traversal
+- Searching
+- Sorting
+- Access
 
 **[⬆ back to top](#table-of-contents)**
 
