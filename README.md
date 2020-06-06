@@ -48,6 +48,8 @@
     - [Exercise: Merge Sorted Arrays](#exercise-merge-sorted-arrays)
     - [Interview Questions: Arrays](#interview-questions-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
+    - [Hash Tables Introduction](#hash-tables-introduction)
+    - [Hash Function](#hash-function)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
@@ -199,11 +201,11 @@ What Is Good Code?
   - Horrible: O(n^2), O(2^n), O(n!)
 
 Big O
-![](Big-O_Algorithm_Complexity_Cheat_Sheet__Know_Thy_Complexities____ericdrowell.jpg)
+![](big-o-complexity.jpg)
 
 - [Know Thy Complexities](https://www.bigocheatsheet.com/)
-- [Big-O Algorithm Complexity Cheat Sheet](big-o-cheatsheet.pdf)
-- [Big O Cheat Sheet](BigOCheatSheet.pdf)
+- [Big O Algorithm Complexity](big-o-complexity.pdf)
+- [Big O Cheat Sheet](big-o-cheatsheet.pdf)
 - [What is the difference between big oh, big omega and big theta notations?](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations)
 
 **[⬆ back to top](#table-of-contents)**
@@ -577,7 +579,7 @@ arrayOfHiNTimes(6)
 
 ### What We Need For Coding Interviews
 
-[Interview Cheat Sheet](InterviewCheatSheet.pdf)
+[Interview Cheat Sheet](interview-cheatsheet.pdf)
 
 Data Structures
 
@@ -1039,6 +1041,16 @@ twoSum([2, 3, 4, 5, 6], 10)
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 7: Data Structures: Hash Tables**
+
+### Hash Tables Introduction
+
+![](hash-tables.jpg)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Hash Function
+
+[md5 Hash Generator](http://www.miraclesalad.com/webtools/md5.php)
 
 **[⬆ back to top](#table-of-contents)**
 
