@@ -29,6 +29,7 @@
     - [O(n!)](#on-1)
     - [3 Pillars Of Programming](#3-pillars-of-programming)
     - [Space Complexity](#space-complexity)
+    - [Exercise: Space Complexity](#exercise-space-complexity)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -501,8 +502,10 @@ What is good code?
 
 ### Space Complexity
 
-Heap - Store variables
-Stack - Keep track of function calls
+When a program executes it has two ways to remember things
+
+- Heap - Store variables
+- Stack - Keep track of function calls
 
 What causes Space Complexity?
 
@@ -510,6 +513,10 @@ What causes Space Complexity?
 - Data Structures
 - Function Call
 - Allocations
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Space Complexity
 
 ```javascript
 // Space complexity O(1)
