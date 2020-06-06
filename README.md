@@ -46,6 +46,7 @@
     - [Implementing An Array](#implementing-an-array)
     - [Exercise: Reverse A String](#exercise-reverse-a-string)
     - [Exercise: Merge Sorted Arrays](#exercise-merge-sorted-arrays)
+    - [Interview Questions: Arrays](#interview-questions-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
@@ -1004,6 +1005,35 @@ const descendingSort = (a, b) => b - a;
 
 const mergeSortedArrays = (arr1, arr2) => arr1.concat(arr2).sort(ascendingSort);
 mergeSortedArrays([0,3,4,31], [3,4,6,30]);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Interview Questions: Arrays
+
+- [LeetCode](https://leetcode.com/)
+- [Interview Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12310382#content)
+
+```javascript
+// Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+// Given nums = [2, 7, 11, 15], target = 9,
+// Because nums[0] + nums[1] = 2 + 7 = 9,
+// return [0, 1].
+
+const twoSum = (nums, target) => {
+  let low = 0;
+  let high = nums.length - 1;
+  while(low < high) {
+    if(nums[low] + nums[high] === target) return [low, high];
+    else if(nums[low] + nums[high] > target) high--;
+    else low++;
+  }
+};
+
+twoSum([2, 3, 4, 5, 6], 10)
 ```
 
 **[⬆ back to top](#table-of-contents)**
