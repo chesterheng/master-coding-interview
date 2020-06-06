@@ -44,7 +44,8 @@
     - [Arrays Introduction](#arrays-introduction)
     - [Static vs Dynamic Arrays](#static-vs-dynamic-arrays)
     - [Implementing An Array](#implementing-an-array)
-    - [Reverse A String](#reverse-a-string)
+    - [Exercise: Reverse A String](#exercise-reverse-a-string)
+    - [Exercise: Merge Sorted Arrays](#exercise-merge-sorted-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
@@ -971,7 +972,7 @@ myArray
 ```
 **[⬆ back to top](#table-of-contents)**
 
-### Reverse A String
+### Exercise: Reverse A String
 
 ```javascript
 const reverse1 = (str = '') => {
@@ -991,6 +992,18 @@ const reverse3 = (str = '') => [...str].reverse().join('');
 reverse1('Timbits Hi')
 reverse2('Timbits Hi')
 reverse3('Timbits Hi')
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Merge Sorted Arrays
+
+```javascript
+const ascendingSort = (a, b) => a - b;
+const descendingSort = (a, b) => b - a;
+
+const mergeSortedArrays = (arr1, arr2) => arr1.concat(arr2).sort(ascendingSort);
+mergeSortedArrays([0,3,4,31], [3,4,6,30]);
 ```
 
 **[⬆ back to top](#table-of-contents)**
