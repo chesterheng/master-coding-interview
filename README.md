@@ -36,6 +36,7 @@
     - [Exercise: Interview Question](#exercise-interview-question)
     - [Review Google Interview](#review-google-interview)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
+    - [What Is A Data Structure?](#what-is-a-data-structure)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
@@ -819,6 +820,17 @@ hasPairWithSum2([1, 2, 4, 4], 8)
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 5: Data Structures: Introduction**
+
+### What Is A Data Structure?
+
+- A data structure is a collection of values.
+- The values can have relationships among them and they can have functions applied to them.
+- All programs are we're modeling real life scenarios.
+
+Question
+
+- How to build one?
+- How to Use it?
 
 **[⬆ back to top](#table-of-contents)**
 
