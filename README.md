@@ -1116,13 +1116,18 @@ class HashTable {
       ? currentBucket.find(item => item[0] === key)[1] 
       : undefined
   }
+
+  keys = () => this.data.filter(item => !!item).map(item => item[0][0]);
 }
 
 const myHashTable = new HashTable(50);
 myHashTable.set('grapes', 10000)
 myHashTable.get('grapes')
+myHashTable.set('oranges', 54)
+myHashTable.get('oranges')
 myHashTable.set('apples', 9)
 myHashTable.get('apples')
+myHashTable.keys()
 ```
 
 **[⬆ back to top](#table-of-contents)**
