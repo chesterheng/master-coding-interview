@@ -34,6 +34,7 @@
     - [What Are Companies Looking For?](#what-are-companies-looking-for)
     - [What We Need For Coding Interviews](#what-we-need-for-coding-interviews)
     - [Exercise: Interview Question](#exercise-interview-question)
+    - [Review Google Interview](#review-google-interview)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
@@ -774,6 +775,46 @@ containsCommonItem3(array1, array2)
 ```
 
 15. If your interviewer is happy with the solution, the interview usually ends here. It is also common that the interviewer asks you extension questions, such as how you would handle the problem if the whole input is too large to fit into memory, or if the input arrives as a stream. This is a common follow-up question at Google, where they care a lot about scale. The answer is usually a divide-and-conquer approach — perform distributed processing of the data and only read certain chunks of the input from disk into memory, write the output back to disk and combine them later.
+
+**[⬆ back to top](#table-of-contents)**
+
+### Review Google Interview
+
+```javascript
+// [1, 2, 3, 9] Sum = 8, No
+// [1, 2, 4, 4] Sum = 8, Yes
+
+// Naive Approach
+const hasPairWithSum = (arr, sum) => {
+  const len = arr.length;
+  for(let i =0; i<len-1; i++){
+     for(let j = i+1;j<len; j++){
+        if (arr[i] + arr[j] === sum)
+            return true;
+     }
+  }
+  return false;
+}
+
+hasPairWithSum([1, 2, 3, 9], 8)
+hasPairWithSum([1, 2, 4, 4], 8)
+
+// Better Approach
+const hasPairWithSum2 = (arr, sum) => {
+  const mySet = new Set();
+  const len = arr.length;
+  for (let i = 0; i < len; i++){
+    if (mySet.has(arr[i])) {
+      return true;
+    }
+    mySet.add(sum - arr[i]);
+  }
+  return false;
+}
+
+hasPairWithSum2([1, 2, 3, 9], 8)
+hasPairWithSum2([1, 2, 4, 4], 8)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
