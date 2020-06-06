@@ -26,6 +26,8 @@
     - [O(n^2)](#on2)
     - [Big O Rule 4 - Drop Non Dominants](#big-o-rule-4---drop-non-dominants)
     - [What Does This All Mean?](#what-does-this-all-mean)
+    - [O(n!)](#on-1)
+    - [3 Pillars Of Programming](#3-pillars-of-programming)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -477,6 +479,22 @@ printAllNumbersThenAllPairSums([1, 2, 3, 4, 5])
 ### What Does This All Mean?
 
 Data Structures + Algorithms = Programs
+
+**[⬆ back to top](#table-of-contents)**
+
+### O(n!)
+
+[Example of O(n!)?](https://stackoverflow.com/questions/3953244/example-of-on)
+
+**[⬆ back to top](#table-of-contents)**
+
+### 3 Pillars Of Programming
+
+What is good code?
+
+1. Readable
+2. Scalable - Speed (Time Complexity)
+3. Scalable - memory (Space Complexity)
 
 **[⬆ back to top](#table-of-contents)**
 
