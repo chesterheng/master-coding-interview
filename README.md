@@ -51,6 +51,7 @@
     - [Hash Tables Introduction](#hash-tables-introduction)
     - [Hash Function](#hash-function)
     - [Hash Collisions](#hash-collisions)
+    - [Exercise: Implement A Hash Table](#exercise-implement-a-hash-table)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
@@ -876,6 +877,9 @@ Question
 
 ## **Section 6: Data Structures: Arrays**
 
+- Arrays for storing ordered collections.
+- Objects for storing keyed collections.
+
 ### Arrays Introduction
 
 | Operation | Big O |
@@ -1056,6 +1060,15 @@ twoSum([2, 3, 4, 5, 6], 10)
 
 ![](hash-tables.jpg)
 
+Examples of Hash Tables
+
+- [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.
+- A [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) is a special type collection – "set of values" (without keys), where each value may occur only once.
+- [Map and Set](https://javascript.info/map-set)
+- [Array vs Set vs Map vs Object](https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b)
+- [ES6 — Map vs Object — What and when?](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)
+- [ES6 — Set vs Array — What and when?](https://medium.com/front-end-weekly/es6-set-vs-array-what-and-when-efc055655e1a)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### Hash Function
@@ -1067,6 +1080,50 @@ twoSum([2, 3, 4, 5, 6], 10)
 ### Hash Collisions
 
 ![](hash-tables-collisions.jpg)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Implement A Hash Table
+
+```javascript
+class HashTable {
+  constructor(size){
+    this.data = new Array(size);
+    // this.data = [];
+  }
+
+  _hash = key => {
+    let hash = 0;
+    for (let i =0; i < key.length; i++){
+        hash = (hash + key.charCodeAt(i) * i) % this.data.length
+    }
+    return hash;
+  }
+
+  set = (key, value) => {
+    const address = this._hash(key);
+    if (!this.data[address]) {
+      this.data[address] = [];
+    }
+    this.data[address].push([key, value]);
+    return this.data;
+  }
+
+  get = (key) => {
+    const address = this._hash(key);
+    const currentBucket = this.data[address]
+    return currentBucket 
+      ? currentBucket.find(item => item[0] === key)[1] 
+      : undefined
+  }
+}
+
+const myHashTable = new HashTable(50);
+myHashTable.set('grapes', 10000)
+myHashTable.get('grapes')
+myHashTable.set('apples', 9)
+myHashTable.get('apples')
+```
 
 **[⬆ back to top](#table-of-contents)**
 
