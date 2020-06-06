@@ -50,6 +50,7 @@
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
     - [Hash Tables Introduction](#hash-tables-introduction)
     - [Hash Function](#hash-function)
+    - [Hash Collisions](#hash-collisions)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
@@ -1044,6 +1045,15 @@ twoSum([2, 3, 4, 5, 6], 10)
 
 ### Hash Tables Introduction
 
+| Operation | Big O |
+| --------- | ----- |
+| insert    | O(1)  |
+| lookup    | O(1)  |
+| delete    | O(n)  |
+| search    | O(n)  |
+
+[Hash Table Animation](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html)
+
 ![](hash-tables.jpg)
 
 **[⬆ back to top](#table-of-contents)**
@@ -1051,6 +1061,12 @@ twoSum([2, 3, 4, 5, 6], 10)
 ### Hash Function
 
 [md5 Hash Generator](http://www.miraclesalad.com/webtools/md5.php)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Hash Collisions
+
+![](hash-tables-collisions.jpg)
 
 **[⬆ back to top](#table-of-contents)**
 
