@@ -52,6 +52,7 @@
     - [Hash Function](#hash-function)
     - [Hash Collisions](#hash-collisions)
     - [Exercise: Implement A Hash Table](#exercise-implement-a-hash-table)
+    - [Hash Tables VS Arrays](#hash-tables-vs-arrays)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
@@ -1129,6 +1130,29 @@ myHashTable.set('apples', 9)
 myHashTable.get('apples')
 myHashTable.keys()
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Hash Tables VS Arrays
+
+Arrays
+
+| Operation | Big O |
+| --------- | ----- |
+| Search    | O(n)  |
+| lookup    | O(1)  |
+| push*     | O(1)  |
+| insert    | O(n)  |
+| delete    | O(n)  |
+
+Hash Tables
+
+| Operation | Big O |
+| --------- | ----- |
+| search    | O(1)  |
+| insert    | O(1)  |
+| lookup    | O(n)  |
+| delete    | O(n)  |
 
 **[⬆ back to top](#table-of-contents)**
 
