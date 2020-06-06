@@ -28,6 +28,7 @@
     - [What Does This All Mean?](#what-does-this-all-mean)
     - [O(n!)](#on-1)
     - [3 Pillars Of Programming](#3-pillars-of-programming)
+    - [Space Complexity](#space-complexity)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
@@ -495,6 +496,42 @@ What is good code?
 1. Readable
 2. Scalable - Speed (Time Complexity)
 3. Scalable - memory (Space Complexity)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Space Complexity
+
+Heap - Store variables
+Stack - Keep track of function calls
+
+What causes Space Complexity?
+
+- Variables
+- Data Structures
+- Function Call
+- Allocations
+
+```javascript
+// Space complexity O(1)
+const boooo = n => {
+  // space allocation for i is O(1)
+  for (let i = 0; i < n.length; i++) {
+    console.log('booooo');
+  }
+}
+boooo([1, 2, 3, 4, 5])
+
+// Space complexity O(n)
+const arrayOfHiNTimes = n => {
+  // space allocation for Data Structures hiArray is O(n)
+  const hiArray = [];
+  for (let i = 0; i < n; i++) {
+    hiArray[i] = 'hi';
+  }
+  return hiArray;
+}
+arrayOfHiNTimes(6)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
