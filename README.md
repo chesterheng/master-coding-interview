@@ -31,6 +31,7 @@
     - [Space Complexity](#space-complexity)
     - [Exercise: Space Complexity](#exercise-space-complexity)
   - [**Section 4: How To Solve Coding Problems**](#section-4-how-to-solve-coding-problems)
+    - [What We Need For Coding Interviews](#what-we-need-for-coding-interviews)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
@@ -543,6 +544,20 @@ arrayOfHiNTimes(6)
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 4: How To Solve Coding Problems**
+
+### What We Need For Coding Interviews
+
+- Analytic Skills
+  - How can you think through a problem and analyze things?
+- Coding Skills
+  - Is your code clean well organized readable?
+  - Do you understand the pros and cons of different solutions?
+- Technical Skills
+  - Do you know the fundamentals?
+  - When you should use a certain data structure over the other?
+  - Why should we use a certain algorithm over another?
+- Communication Skills
+  - Can you communicate well with others?
 
 **[⬆ back to top](#table-of-contents)**
 
