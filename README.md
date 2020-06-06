@@ -37,6 +37,7 @@
     - [Review Google Interview](#review-google-interview)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
     - [What Is A Data Structure?](#what-is-a-data-structure)
+    - [How Computers Store Data](#how-computers-store-data)
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
   - [**Section 7: Data Structures: Hash Tables**](#section-7-data-structures-hash-tables)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
@@ -831,6 +832,14 @@ Question
 
 - How to build one?
 - How to Use it?
+
+**[⬆ back to top](#table-of-contents)**
+
+### How Computers Store Data
+
+- CPU: access RAM and Storage for information
+- RAM: fast but limited, non-persistent
+- Storage: more but slow, persistent
 
 **[⬆ back to top](#table-of-contents)**
 
