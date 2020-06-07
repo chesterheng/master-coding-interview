@@ -102,6 +102,7 @@
     - [The Issue With sort()](#the-issue-with-sort)
     - [Sorting Algorithms](#sorting-algorithms)
     - [Exercise: Bubble Sort](#exercise-bubble-sort)
+    - [Exercise: Selection Sort](#exercise-selection-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2490,13 +2491,40 @@ const bubbleSort = array => {
   for (let i = 0; i < length; i++) {
     for (let j = 0; j < length; j++) { 
       if(array[j] > array[j+1]) {
-        [array[j+1], array[j]] = [array[j], array[j+1]];
+        [array[j], array[j+1]] = [array[j+1], array[j]];
       }
+      console.log(array)
     }        
   }
 }
 
 bubbleSort(numbers);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Selection Sort
+
+```javascript
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const selectionSort = array => {
+  const length = array.length;
+  for (let i = 0; i < length; i++) {
+    let min = i;
+    for (let j = i + 1; j < length; j++) {
+      if (array[min] > array[j]) {
+          min = j;
+      }
+    }
+    if (min !== i) {
+      [array[i], array[min]] = [array[min], array[i]]
+    }
+  }
+  return array;
+}
+
+selectionSort(numbers);
 ```
 
 **[⬆ back to top](#table-of-contents)**
