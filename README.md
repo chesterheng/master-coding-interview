@@ -59,6 +59,7 @@
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
     - [What Is A Linked List?](#what-is-a-linked-list)
     - [Exercise: Why Linked Lists?](#exercise-why-linked-lists)
+    - [Doubly Linked Lists](#doubly-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
@@ -1390,7 +1391,7 @@ class LinkedList {
   }
 }
 
-let myLinkedList = new LinkedList(10);
+const myLinkedList = new LinkedList(10);
 myLinkedList
 myLinkedList.append(5);
 myLinkedList.append(16);
@@ -1399,6 +1400,117 @@ myLinkedList.insert(2, 99);
 myLinkedList.insert(20, 88);
 myLinkedList.remove(2);
 ```
+**[⬆ back to top](#table-of-contents)**
+
+### Doubly Linked Lists
+
+```javascript
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+    this.prev = null;
+  }
+}
+
+class DoublyLinkedList {
+  constructor(value) {
+    this.head = new Node(value);
+    this.tail = this.head;
+    this.length = 1;
+  }
+  append(value) {
+    const newNode = new Node(value);
+    newNode.prev = this.tail
+    this.tail.next = newNode;
+    this.tail = newNode;
+    this.length++;
+    return this;
+  }
+  prepend(value) {
+    const newNode = new Node(value);
+    newNode.next = this.head;
+    this.head.prev = newNode
+    this.head = newNode;
+    this.length++;
+    return this;
+  }
+  printList() {
+    const array = [];
+    let currentNode = this.head;
+    while(currentNode !== null){
+      array.push(currentNode.value)
+      currentNode = currentNode.next
+    }
+    return array;
+  }
+  insert(index, value){
+    if(index >= this.length) {
+      return this.append(value);
+    }
+    
+    const newNode = new Node(value);
+    const leader = this.traverseToIndex(index-1);
+    const follower = leader.next;
+    leader.next = newNode;
+    newNode.prev = leader;
+    newNode.next = follower;
+    follower.prev = newNode;
+    this.length++;
+    console.log(this)
+    return this.printList();
+  }
+  traverseToIndex(index) {
+    //Check parameters
+    let counter = 0;
+    let currentNode = this.head;
+    while(counter !== index){
+      currentNode = currentNode.next;
+      counter++;
+    }
+    return currentNode;
+  }
+  remove(index) {  
+    const leader = this.traverseToIndex(index-1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
+  reverse() {
+    if (!this.head.next) {
+      return this.head;
+    }
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
+
+    while(second) {
+      const temp = second.next;
+      second.next = first;
+      first = second;
+      second = temp;
+    }
+
+    this.head.next = null;
+    this.head = first;
+    return this.printList();
+  }
+}
+
+const myLinkedList = new DoublyLinkedList(10);
+myLinkedList
+myLinkedList.append(5)
+myLinkedList.append(16)
+myLinkedList.prepend(1)
+myLinkedList.insert(2, 99)
+myLinkedList.insert(20, 88)
+myLinkedList.printList()
+myLinkedList.remove(2)
+myLinkedList.reverse()
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## **Section 9: Data Structures: Stacks + Queues**
 
