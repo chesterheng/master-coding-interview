@@ -109,6 +109,7 @@
     - [Exercise: Merge Sort](#exercise-merge-sort)
     - [Quick Sort](#quick-sort)
     - [Which Sort Is Best?](#which-sort-is-best)
+    - [Heap Sort](#heap-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2676,6 +2677,55 @@ quickSort(numbers);
 | Interested in a good average-case result   | Quicksort         |
 | Items are drawn from a dense universe      | Bucket Sort       |
 | Desire to write as little code as possible | Insertion Sort    |
+
+**[⬆ back to top](#table-of-contents)**
+
+### Heap Sort
+
+```javascript
+const swap = (array, a, b) => [array[a], array[b]] = [array[b], array[a]];
+
+const max_heapify = (array, i, length) => {
+  while (true) {
+    let left = i*2 + 1;
+    let right = i*2 + 2;
+    let largest = i;
+
+    if (left < length && array[left] > array[largest]) {
+        largest = left;
+    }
+
+    if (right < length && array[right] > array[largest]) {
+        largest = right;
+    }
+
+    if (i == largest) {
+        break;
+    }
+
+    swap(array, i, largest);
+    i = largest;
+  }
+}
+
+const heapify = (array, length) => {
+  for (let i = Math.floor(length/2); i >= 0; i--) {
+    max_heapify(array, i, length);
+  }
+}
+
+const heapsort = array => {
+  heapify(array, array.length);
+
+  for (let i = array.length - 1; i > 0; i--) {
+    swap(array, i, 0);
+    max_heapify(array, 0, i-1);
+  }
+}
+
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+heapsort(numbers);
+```
 
 **[⬆ back to top](#table-of-contents)**
 
