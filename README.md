@@ -120,6 +120,7 @@
     - [breadthFirstSearch()](#breadthfirstsearch)
     - [PreOrder, InOrder, PostOrder](#preorder-inorder-postorder)
     - [depthFirstSearch()](#depthfirstsearch)
+    - [Exercise: Validate A BST](#exercise-validate-a-bst)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -3272,6 +3273,12 @@ tree.DFTPostOrder();
 // Post Order - left, right, root
 // Post Order - [1, 6, 4, 15, 170, 20, 9]
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Validate A BST
+
+[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
 **[⬆ back to top](#table-of-contents)**
 
