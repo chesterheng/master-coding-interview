@@ -110,6 +110,7 @@
     - [Quick Sort](#quick-sort)
     - [Which Sort Is Best?](#which-sort-is-best)
     - [Heap Sort](#heap-sort)
+    - [Radix Sort + Counting Sort](#radix-sort--counting-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2726,6 +2727,25 @@ const heapsort = array => {
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 heapsort(numbers);
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Radix Sort + Counting Sort
+
+Can we beat O(nlogn)?
+
+| Comparison Sort | Non-Comparison Sort |
+| --------------- | ------------------- |
+| Bubble Sort     | Counting Sort       |
+| Insertion Sort  | Radix Sort          |
+| Selection Sort  |                     |
+| Merge Sort      |                     |
+| Quick Sort      |                     |
+
+- [Radix Sort](https://brilliant.org/wiki/radix-sort/)
+- [Radix Sort Animation](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
+- [Counting Sort](https://brilliant.org/wiki/counting-sort/) 
+- [Counting Sort Animation](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
 
 **[⬆ back to top](#table-of-contents)**
 
