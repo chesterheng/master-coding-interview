@@ -66,6 +66,7 @@
     - [Linked Lists Review](#linked-lists-review)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
     - [Stacks](#stacks)
+    - [Queues](#queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1616,6 +1617,24 @@ Stacks: LIFO
 | peek      | O(1)  |
 
 **[⬆ back to top](#table-of-contents)**
+
+### Queues
+
+Real life examples
+
+- waitlist app to buy tickets for a concert
+- restaurant app to see if you can get a table
+- uber to grab a ride
+- printer
+
+Stacks: FIFO
+
+| Operation | Big O |
+| --------- | ----- |
+| lookup    | O(n)  |
+| enqueue   | O(1)  |
+| dequeue   | O(1)  |
+| peek      | O(1)  |
 
 ## **Section 10: Data Structures: Trees**
 
