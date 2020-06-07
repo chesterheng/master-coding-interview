@@ -90,6 +90,7 @@
     - [Graphs Review](#graphs-review)
     - [Data Structures Review](#data-structures-review)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
+    - [Introduction to Algorithms](#introduction-to-algorithms)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -618,21 +619,20 @@ arrayOfHiNTimes(6)
 
 [Data Structures](Top 8 Data Structures for Coding Interviews and practice interview questions)
 
-- Arrays
-- Stacks
-- Queues
-- Linked Lists
-- Trees
-- Tries
-- Graphs
-- Hash tables
+| Data Structures | Data Structures |
+| --------------- | --------------- |
+| Arrays          | Queues          |
+| Hash tables     | Trees           |
+| Linked Lists    | Tries           |
+| Stacks          | Graphs          |
 
-Algorithms
 
-- Sorting
-- Dynamic Programming
-- BFS + DFS (Searching)
-- Recursion
+| Algorithms            |
+| --------------------- |
+| Recursion             |
+| Sorting               |
+| BFS + DFS (Searching) |
+| Dynamic Programming   |
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -2304,11 +2304,30 @@ Con
 ### Data Structures Review
 
 ![](data-structures-blocks.jpg)
-![](programs.jpg)
+
 
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 12: Algorithms: Recursion**
+
+### Introduction to Algorithms
+
+![](programs.jpg)
+
+| Data Structures | Data Structures |
+| --------------- | --------------- |
+| Arrays          | Queues          |
+| Hash tables     | Trees           |
+| Linked Lists    | Tries           |
+| Stacks          | Graphs          |
+
+
+| Algorithms            |
+| --------------------- |
+| Recursion             |
+| Sorting               |
+| BFS + DFS (Searching) |
+| Dynamic Programming   |
 
 **[⬆ back to top](#table-of-contents)**
 
