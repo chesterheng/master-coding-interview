@@ -111,6 +111,7 @@
     - [Which Sort Is Best?](#which-sort-is-best)
     - [Heap Sort](#heap-sort)
     - [Radix Sort + Counting Sort](#radix-sort--counting-sort)
+    - [Sorting Interview](#sorting-interview)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2746,6 +2747,21 @@ Can we beat O(nlogn)?
 - [Radix Sort Animation](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html)
 - [Counting Sort](https://brilliant.org/wiki/counting-sort/) 
 - [Counting Sort Animation](https://www.cs.usfca.edu/~galles/visualization/CountingSort.html)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Sorting Interview
+
+| Question                                                                                 | Sorting algorithm                                    |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Sort 10 schools around your house by distance                                            | Insertion Sort                                       |
+| eBay sorts listings by the current Bid amount                                            | Radix or Counting sort                               |
+| Sort scores on ESPN                                                                      | Quick sort                                           |
+| Massive database (can't fit all into memory) needs to sort through past year's user data | Merge Sort                                           |
+| Almost sorted Udemy review data needs to update and add 2 new reviews                    | Insertion Sort                                       |
+| Temperature Records for the past 50 years in Canada                                      | radix or counting Sort, Quick sort if decimal places |
+| Large user name database needs to be sorted. Data is very random.                        | Quick sort                                           |
+| You want to teach sorting                                                                | Bubble sort                                          |
 
 **[⬆ back to top](#table-of-contents)**
 
