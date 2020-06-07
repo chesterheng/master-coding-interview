@@ -121,6 +121,7 @@
     - [PreOrder, InOrder, PostOrder](#preorder-inorder-postorder)
     - [depthFirstSearch()](#depthfirstsearch)
     - [Exercise: Validate A BST](#exercise-validate-a-bst)
+    - [Graph Traversals](#graph-traversals)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -3279,6 +3280,27 @@ tree.DFTPostOrder();
 ### Exercise: Validate A BST
 
 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Graph Traversals
+
+- Breadth First Search - Shortest path
+- Depth First Search - Check to see if it exists
+
+BFS
+
+| Pros          | Cons        |
+| ------------- | ----------- |
+| Shortest Path | More Memory |
+| Closer Nodes  |             |
+
+DFS
+
+| Pros         | Cons              |
+| ------------ | ----------------- |
+| Less Memory  | Does Path Exists? |
+| Can Get Slow |                   |
 
 **[⬆ back to top](#table-of-contents)**
 
