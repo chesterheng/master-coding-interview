@@ -83,6 +83,7 @@
     - [Exercise: Binary Search Tree](#exercise-binary-search-tree)
     - [AVL Trees vs Red Black Trees](#avl-trees-vs-red-black-trees)
     - [Binary Heaps](#binary-heaps)
+    - [Trie](#trie)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
@@ -2196,6 +2197,14 @@ Pros
 Cons
 
 - Slow Lookup
+
+**[⬆ back to top](#table-of-contents)**
+
+### Trie
+
+Real life example
+
+- auto complete your text
 
 **[⬆ back to top](#table-of-contents)**
 
