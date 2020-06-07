@@ -122,6 +122,7 @@
     - [depthFirstSearch()](#depthfirstsearch)
     - [Exercise: Validate A BST](#exercise-validate-a-bst)
     - [Graph Traversals](#graph-traversals)
+    - [Dijkstra + Bellman-Ford Algorithms](#dijkstra--bellman-ford-algorithms)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -3301,6 +3302,12 @@ DFS
 | ------------ | ----------------- |
 | Less Memory  | Does Path Exists? |
 | Can Get Slow |                   |
+
+**[⬆ back to top](#table-of-contents)**
+
+### Dijkstra + Bellman-Ford Algorithms
+
+[Finding The Shortest Path, With A Little Help From Dijkstra](https://medium.com/basecs/finding-the-shortest-path-with-a-little-help-from-dijkstra-613149fbdc8e)
 
 **[⬆ back to top](#table-of-contents)**
 
