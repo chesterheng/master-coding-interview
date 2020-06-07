@@ -54,6 +54,7 @@
     - [Exercise: Implement A Hash Table](#exercise-implement-a-hash-table)
     - [Hash Tables VS Arrays](#hash-tables-vs-arrays)
     - [Exercise: First Recurring Character](#exercise-first-recurring-character)
+    - [Hash Tables Review](#hash-tables-review)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
@@ -1160,6 +1161,7 @@ Hash Tables
 ### Exercise: First Recurring Character
 
 ```javascript
+//Google Question
 //Given an array = [2,5,1,2,3,5,1,2,4]:
 //It should return 2
 
@@ -1202,7 +1204,40 @@ firstRecurringCharacter2([2,5,1,2,3,5,1,2,4])
 firstRecurringCharacter2([2,1,1,2,3,5,1,2,4])
 firstRecurringCharacter2([2,3,4,5])
 firstRecurringCharacter2([2,5,5,2,3,5,1,2,4])
+
+const firstRecurringCharacter3 = input => {
+  const myMap = new Map()
+  for (let i = 0; i < input.length; i++) {
+    const isFound = myMap.has(input[i]) 
+    if (isFound) return input[i]
+    else myMap.set(input[i], i)
+  }
+  return undefined;
+}
+
+firstRecurringCharacter3([2,5,1,2,3,5,1,2,4])
+firstRecurringCharacter3([2,1,1,2,3,5,1,2,4])
+firstRecurringCharacter3([2,3,4,5])
+firstRecurringCharacter3([2,5,5,2,3,5,1,2,4])
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Hash Tables Review
+
+[Completed JavaScript Data Structure Course, and Here is What I Learned About Hash Table.](https://dev.to/maikomiyazaki/completed-javascript-data-structure-course-and-here-is-what-i-learned-about-hash-table-2ecm)
+
+Pro
+
+- Fast lookups*
+- Fast inserts
+- Flexible Keys
+*Good collision resolution needed
+
+Con
+
+- Unordered
+- Slow key interation
 
 **[⬆ back to top](#table-of-contents)**
 
