@@ -81,6 +81,8 @@
     - [Balanced VS Unbalanced BST](#balanced-vs-unbalanced-bst)
     - [BST Pros and Cons](#bst-pros-and-cons)
     - [Exercise: Binary Search Tree](#exercise-binary-search-tree)
+    - [AVL Trees vs Red Black Trees](#avl-trees-vs-red-black-trees)
+    - [Binary Heaps](#binary-heaps)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
@@ -2152,6 +2154,48 @@ traverse(tree.root);
 //  4     20
 //1  6  15  170
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### [AVL Trees vs Red Black Trees](https://stackoverflow.com/questions/13852870/red-black-tree-over-avl-tree)
+
+AVL Trees
+
+- [Animation](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
+- [How it Works](https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7)
+
+Red Black Trees:
+
+- [Animation](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
+- [How it Works](https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Binary Heaps
+
+[Binary Heaps](https://visualgo.net/en/heap?slide=1)
+
+| Operation | Big O    |
+| --------- | -------- |
+| lookup    | O(n)     |
+| insert    | O(log n) |
+| delete    | O(log n) |
+
+Real life example - [Priority Queue](https://medium.com/@lucasmagnum/sidenotes-priority-queue-abstract-data-type-and-data-structure-52b5fcd7b904)
+
+- A real-life example of a [priority queue](https://medium.com/@lucasmagnum/sidenotes-priority-queue-abstract-data-type-and-data-structure-52b5fcd7b904) would be a hospital queue where the patient with the most critical situation would be the first in the queue. In this case, the priority order is the situation of each patient
+- [Implementation of Priority Queue in Javascript](https://www.geeksforgeeks.org/implementation-priority-queue-javascript/)
+
+Pros
+
+- Better than O(n)
+- Priority
+- Flexible Size
+- Fast Insert
+
+Cons
+
+- Slow Lookup
 
 **[⬆ back to top](#table-of-contents)**
 
