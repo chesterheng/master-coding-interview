@@ -65,8 +65,10 @@
     - [Doubly Linked Lists](#doubly-linked-lists)
     - [Linked Lists Review](#linked-lists-review)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
+    - [Stacks + Queues Introduction](#stacks--queues-introduction)
     - [Stacks](#stacks)
     - [Queues](#queues)
+    - [Stacks VS Queues](#stacks-vs-queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -917,7 +919,7 @@ Array vs Object
 - Arrays for storing ordered collections.
 - Objects for storing keyed collections.
 
-Real life examples
+[Real life examples](https://www.youtube.com/watch?v=DBZoB8r4XY8)
 
 - [Cinema Book Challenge](https://www.101computing.net/cinema-booking-challenge/)
 
@@ -1344,7 +1346,7 @@ Type
 - Single Linked List
 - Double Linked List
 
-Real life examples
+[Real life examples](https://www.youtube.com/watch?v=Z_fNkGm1oN4)
 
 - Image viewer – Previous and next images are linked, hence can be accessed by next and previous button.
 - Previous and next page in web browser – We can access previous and next url searched in web browser by pressing back and next button since, they are linked as linked list.
@@ -1600,12 +1602,19 @@ Cons
 
 ## **Section 9: Data Structures: Stacks + Queues**
 
+### Stacks + Queues Introduction
+
+[Stack and Queue Real World Examples](https://www.youtube.com/watch?v=M0TpZhS4LuM)
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Stacks
 
 Real life examples
 
 - Browser history
 - Store undo/redo operations in a word processor
+- Maze
 
 Stacks: LIFO
 
@@ -1620,7 +1629,7 @@ Stacks: LIFO
 
 ### Queues
 
-Real life examples
+Real life examples - Scheduling
 
 - waitlist app to buy tickets for a concert
 - restaurant app to see if you can get a table
@@ -1635,6 +1644,18 @@ Stacks: FIFO
 | enqueue   | O(1)  |
 | dequeue   | O(1)  |
 | peek      | O(1)  |
+
+### Stacks VS Queues
+
+Stacks
+
+- Implement with Arrays and Linked Lists
+
+Queues
+
+- Implement with Linked Lists
+
+**[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Data Structures: Trees**
 
