@@ -99,6 +99,7 @@
     - [Recursion Review](#recursion-review)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
     - [Sorting Introduction](#sorting-introduction)
+    - [The Issue With sort()](#the-issue-with-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2451,6 +2452,24 @@ reverseStringRecursive('yoyo mastery')
 - Merge Sort
 - Quick Sort
 
+**[⬆ back to top](#table-of-contents)**
+
+### The Issue With sort()
+
+```javascript
+// default sort order is ascending
+// converting the elements into strings
+// then comparing their sequences of UTF-16 code units values
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// expected output: Array [1, 100000, 21, 30, 4]
+```
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Algorithms: Searching + BFS + DFS**
