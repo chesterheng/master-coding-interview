@@ -43,6 +43,7 @@
   - [**Section 6: Data Structures: Arrays**](#section-6-data-structures-arrays)
     - [Arrays Introduction](#arrays-introduction)
     - [Static vs Dynamic Arrays](#static-vs-dynamic-arrays)
+    - [Optional: Classes In Javascript](#optional-classes-in-javascript)
     - [Implementing An Array](#implementing-an-array)
     - [Exercise: Reverse A String](#exercise-reverse-a-string)
     - [Exercise: Merge Sorted Arrays](#exercise-merge-sorted-arrays)
@@ -933,6 +934,39 @@ JavaScript Array is dynamic
 
 **[⬆ back to top](#table-of-contents)**
 
+### Optional: Classes In Javascript
+
+- [Understanding Classes in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-classes-in-javascript)
+- [Arrow Functions in Class Properties Might Not Be As Great As We Think](https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1)
+
+```javascript
+class Hero {
+  constructor(name, level) {
+    this.name = name;
+    this.level = level;
+  }
+  greet = () => {
+    return `${this.name} says hello.`;
+  }
+}
+
+class Mage extends Hero {
+  constructor(name, level, spell) {
+    super(name, level);
+    this.spell = spell;
+  }
+  greet() {
+    super.greet()
+  }
+}
+
+const hero1 = new Hero('Varg', 1);
+const hero2 = new Mage('Lejon', 2, 'Magic Missile');
+hero2.greet()
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Implementing An Array
 
 ```javascript
@@ -941,28 +975,30 @@ class MyArray {
     this.length = 0;
     this.data = {};
   }
-  get = index => this.data[index];  // O(1)
+  get(index) {
+    return this.data[index];  // O(1)
+  }
 
-  push = item => {  
+  push(item) {  
     this.data[this.length] = item;  // O(1)
     this.length++;
     return this.data;
   }
   
-  pop = () => {
+  pop() {
     const lastItem = this.data[this.length - 1];  // O(1)
     delete this.data[this.length - 1];
     this.length--;
     return lastItem;
   }
   
-  deleteAtIndex = index => {
+  deleteAtIndex(index) {
     const item = this.data[index];
     this.shiftItems(index); // O(n)
     return item;
   }
   
-  shiftItems = index => {
+  shiftItems(index) {
     for (let i = index; i < this.length - 1; i++) { 
       this.data[i] = this.data[i + 1];  // O(n)
     }
@@ -981,7 +1017,6 @@ myArray.deleteAtIndex(0);
 myArray.push('are');
 myArray.push('nice');
 myArray.shiftItems(0);
-myArray
 ```
 **[⬆ back to top](#table-of-contents)**
 
@@ -1028,7 +1063,6 @@ mergeSortedArrays([0,3,4,31], [3,4,6,30]);
 
 ```javascript
 // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 // Given nums = [2, 7, 11, 15], target = 9,
@@ -1097,7 +1131,7 @@ class HashTable {
     // this.data = [];
   }
 
-  _hash = key => {
+  _hash(key) {
     let hash = 0;
     for (let i =0; i < key.length; i++){
         hash = (hash + key.charCodeAt(i) * i) % this.data.length
@@ -1105,7 +1139,7 @@ class HashTable {
     return hash;
   }
 
-  set = (key, value) => {
+  set(key, value) {
     const address = this._hash(key);
     if (!this.data[address]) {
       this.data[address] = [];
@@ -1114,7 +1148,7 @@ class HashTable {
     return this.data;
   }
 
-  get = (key) => {
+  get(key) {
     const address = this._hash(key);
     const currentBucket = this.data[address]
     return currentBucket 
@@ -1122,7 +1156,9 @@ class HashTable {
       : undefined
   }
 
-  keys = () => this.data.filter(item => !!item).map(item => item[0][0]);
+  keys() {
+    return this.data.filter(item => !!item).map(item => item[0][0]);
+  }
 }
 
 const myHashTable = new HashTable(50);
@@ -1276,6 +1312,93 @@ Linked Lists
 | delete    | O(n)  |
 
 **[⬆ back to top](#table-of-contents)**
+
+```javascript
+// Create the below linked list:
+// myLinkedList = {
+//   head: { value: 10, 
+//           next: { value: 5, 
+//                   next: { value: 16,
+//                           next: null
+//                         }
+//                 }
+//         }
+// };
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class LinkedList {
+  constructor(value) {
+    this.head = new Node(value);
+    this.tail = this.head;
+    this.length = 1;
+  }
+  append(value) {
+    const newNode = new Node(value);
+    this.tail.next = newNode;
+    this.tail = newNode;
+    this.length++;
+    return this;
+  }
+  prepend(value) {
+    const newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
+    this.length++;
+    return this;
+  }
+  printList() {
+    const array = [];
+    let currentNode = this.head;
+    while(currentNode !== null){
+        array.push(currentNode.value)
+        currentNode = currentNode.next
+    }
+    return array;
+  }
+  insert(index, value){
+    if(index >= this.length) {
+      return this.append(value);
+    }
+    const newNode = new Node(value);
+    const leader = this.traverseToIndex(index-1);
+    const holdingPointer = leader.next;
+    leader.next = newNode;
+    newNode.next = holdingPointer;
+    this.length++;
+    return this.printList();
+  }
+  traverseToIndex(index) {
+    let counter = 0;
+    let currentNode = this.head;
+    while(counter !== index){
+      currentNode = currentNode.next;
+      counter++;
+    }
+    return currentNode;
+  }
+  remove(index) {     
+    const leader = this.traverseToIndex(index-1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
+}
+
+let myLinkedList = new LinkedList(10);
+myLinkedList
+myLinkedList.append(5);
+myLinkedList.append(16);
+myLinkedList.prepend(1);
+myLinkedList.insert(2, 99);
+myLinkedList.insert(20, 88);
+myLinkedList.remove(2);
+```
 
 ## **Section 9: Data Structures: Stacks + Queues**
 
