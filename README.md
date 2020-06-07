@@ -87,6 +87,8 @@
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
     - [Types Of Graphs](#types-of-graphs)
     - [Exercise: Graph Implementation](#exercise-graph-implementation)
+    - [Graphs Review](#graphs-review)
+    - [Data Structures Review](#data-structures-review)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
@@ -2282,6 +2284,27 @@ myGraph.addEdge('6', '5');
 myGraph
 myGraph.showConnections(); 
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Graphs Review
+
+[neo4j](https://neo4j.com/)
+
+Pro
+
+- Relationships
+
+Con
+
+- Scaling is hard
+
+**[⬆ back to top](#table-of-contents)**
+
+### Data Structures Review
+
+![](data-structures-blocks.jpg)
+![](programs.jpg)
 
 **[⬆ back to top](#table-of-contents)**
 
