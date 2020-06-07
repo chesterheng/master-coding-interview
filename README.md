@@ -125,6 +125,8 @@
     - [Dijkstra + Bellman-Ford Algorithms](#dijkstra--bellman-ford-algorithms)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
     - [Dynamic Programming Introduction](#dynamic-programming-introduction)
+    - [Memoization](#memoization)
+    - [Memoization](#memoization-1)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
     - [During The Interview](#during-the-interview)
@@ -3318,6 +3320,60 @@ DFS
 
 - It is an optimization technique
 - Do you have something you can cache? Dynamic Programming
+
+**[⬆ back to top](#table-of-contents)**
+
+### Memoization
+
+Optimization - Caching
+
+**[⬆ back to top](#table-of-contents)**
+
+### Memoization
+
+```javascript
+const addTo80 = n => n + 80;
+addTo80(5)
+addTo80(5)
+addTo80(5)
+
+//learn to cache
+let cache = {};
+const memoizeAddTo80 = n => {
+  if (n in cache) {
+    return cache[n];
+  } else {
+    console.log('long time');
+    const answer = n + 80;
+    cache[n] = answer;
+    return answer;
+  }
+}
+memoizeAddTo80(5)
+memoizeAddTo80(5)
+memoizeAddTo80(5)
+
+// let's make that better with no global scope
+// This is closure in javascript
+const memoizeAddTo80Closure = n => { 
+  const cache = {};
+  return n => {
+    if (n in cache) {
+      return cache[n];
+    } else {
+      console.log('long time');
+      const answer = n + 80;
+      cache[n] = answer;
+      return answer;
+    }
+  }
+}
+
+const memoized = memoizeAddTo80Closure();
+memoized(5)
+memoized(5)
+memoized(5)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
