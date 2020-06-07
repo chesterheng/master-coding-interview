@@ -91,6 +91,7 @@
     - [Introduction to Algorithms](#introduction-to-algorithms)
     - [Stack Overflow](#stack-overflow)
     - [Anatomy Of Recursion](#anatomy-of-recursion)
+    - [Exercise: Factorial](#exercise-factorial)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -2322,6 +2323,28 @@ const inception = () => {
 inception();
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Factorial
+
+```javascript
+// Write two functions that finds the factorial of any number. One should use recursive, the other should just use a for loop
+
+const findFactorialRecursive = number => {  // O(n)
+  if(number <= 2) return number;
+  return number * findFactorialRecursive(number - 1);
+}
+
+const findFactorialIterative = number => { // O(n)
+  let answer = 1;
+  for(let i = 2; i <= number; i++)
+    answer = answer * i
+  return answer;
+}
+
+findFactorialRecursive(5)
+findFactorialIterative(5)
+```
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 13: Algorithms: Sorting**
