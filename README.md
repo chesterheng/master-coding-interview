@@ -78,6 +78,8 @@
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
     - [Trees Introduction](#trees-introduction)
     - [Binary Trees](#binary-trees)
+    - [Balanced VS Unbalanced BST](#balanced-vs-unbalanced-bst)
+    - [BST Pros and Cons](#bst-pros-and-cons)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
@@ -1961,6 +1963,32 @@ log 100 = 2
  / \    / \
 9  37  104 144
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Balanced VS Unbalanced BST
+
+Unbalanced BST
+
+| Operation | Big O |
+| --------- | ----- |
+| lookup    | O(n)  |
+| insert    | O(n)  |
+| delete    | O(n)  |
+
+**[⬆ back to top](#table-of-contents)**
+
+### BST Pros and Cons
+
+Pros
+
+- Better than O(n)
+- Ordered
+- Flexible Size
+
+Cons
+
+- No O(1) operations
 
 **[⬆ back to top](#table-of-contents)**
 
