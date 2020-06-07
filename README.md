@@ -90,6 +90,7 @@
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
     - [Introduction to Algorithms](#introduction-to-algorithms)
     - [Stack Overflow](#stack-overflow)
+    - [Anatomy Of Recursion](#anatomy-of-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -2293,6 +2294,32 @@ function inception() {
   debugger;
   inception();
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Anatomy Of Recursion
+
+- Identify the base case
+- Identify the recursive case
+- Get closer and closer and return when needed. Usually you have 2 returns
+
+```javascript
+let counter = 0;
+
+const inception = () => {
+  console.log(counter)
+  // base case
+  if(counter > 3) {
+    return 'done!';
+  }
+  counter++;
+  
+  // recursive calls
+  return inception();
+}
+
+inception();
 ```
 
 **[⬆ back to top](#table-of-contents)**
