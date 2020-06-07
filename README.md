@@ -141,6 +141,7 @@
     - [After The Interview](#after-the-interview)
     - [Section Summary](#section-summary)
   - [**Section 17: Offer + Negotiation**](#section-17-offer--negotiation)
+    - [Negotiation 101](#negotiation-101)
   - [**Section 18: Thank You**](#section-18-thank-you)
   - [**Section 19: Extras: Google, Amazon, Facebook Interview Questions**](#section-19-extras-google-amazon-facebook-interview-questions)
   - [**Section 20: Contributing To Open Source To Gain Experience**](#section-20-contributing-to-open-source-to-gain-experience)
@@ -3572,6 +3573,14 @@ Tell me about an interesting project?
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 17: Offer + Negotiation**
+
+### Negotiation 101
+
+- Don't end the conversation
+- Give reason for everything
+- Always negotiate
+- Be positive
+- Have stakes
 
 **[⬆ back to top](#table-of-contents)**
 
