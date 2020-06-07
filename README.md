@@ -70,6 +70,7 @@
     - [Queues](#queues)
     - [Stacks VS Queues](#stacks-vs-queues)
     - [Exercise: Stack Implementation (Linked Lists)](#exercise-stack-implementation-linked-lists)
+    - [Exercise: Stack Implementation (Array)](#exercise-stack-implementation-array)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1700,6 +1701,39 @@ class Stack {
     const holdingPointer = this.top;
     this.top = this.top.next;
     this.length--;
+    return this;
+  }
+}
+
+const myStack = new Stack();
+myStack.peek();
+myStack.push('google');
+myStack.push('udemy');
+myStack.push('discord');
+myStack.peek();
+myStack.pop();
+myStack.pop();
+myStack.pop();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Stack Implementation (Array)
+
+```javascript
+class Stack {
+  constructor(){
+    this.array = [];
+  }
+  peek() {
+    return this.array[this.array.length-1];
+  }
+  push(value){
+    this.array.push(value);
+    return this;
+  }
+  pop(){
+    this.array.pop();
     return this;
   }
 }
