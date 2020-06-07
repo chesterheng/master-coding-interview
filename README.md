@@ -104,6 +104,7 @@
     - [Exercise: Bubble Sort](#exercise-bubble-sort)
     - [Exercise: Selection Sort](#exercise-selection-sort)
     - [Dancing Algorithms](#dancing-algorithms)
+    - [Insertion Sort](#insertion-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2533,6 +2534,29 @@ selectionSort(numbers);
 ### Dancing Algorithms
 
 [AlgoRythmics](https://www.youtube.com/user/AlgoRythmics/videos)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Insertion Sort
+
+```javascript
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const insertionSort = array => {
+  for (let i = 1; i < array.length; i++) {
+    let j = i - 1
+    let tmp = array[i]
+    while (j >= 0 && array[j] > tmp) {
+      array[j + 1] = array[j]
+      j--
+    }
+    array[j+1] = tmp
+  }
+  return array
+}
+
+insertionSort(numbers);
+```
 
 **[⬆ back to top](#table-of-contents)**
 
