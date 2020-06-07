@@ -113,6 +113,7 @@
     - [Radix Sort + Counting Sort](#radix-sort--counting-sort)
     - [Sorting Interview](#sorting-interview)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
+    - [Searching + Traversal Introduction](#searching--traversal-introduction)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -2766,6 +2767,13 @@ Can we beat O(nlogn)?
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Algorithms: Searching + BFS + DFS**
+
+### Searching + Traversal Introduction
+
+- Linear Search
+- Binary Search
+- Depth First Search
+- Breadth First Search
 
 **[⬆ back to top](#table-of-contents)**
 
