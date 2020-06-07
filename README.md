@@ -127,6 +127,7 @@
     - [Dynamic Programming Introduction](#dynamic-programming-introduction)
     - [Memoization](#memoization)
     - [Memoization](#memoization-1)
+    - [Fibonacci and Dynamic Programming](#fibonacci-and-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
     - [During The Interview](#during-the-interview)
@@ -3320,6 +3321,14 @@ DFS
 
 - It is an optimization technique
 - Do you have something you can cache? Dynamic Programming
+- Dynamic Programming = Divide & Conquer + Memorization
+
+When to use Dynamic Programming?
+
+- Can be divided into subproblem
+- Recursion Solution
+- Are there repetitive subproblems?
+- Memorize subproblems
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -3373,6 +3382,54 @@ const memoized = memoizeAddTo80Closure();
 memoized(5)
 memoized(5)
 memoized(5)
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Fibonacci and Dynamic Programming
+
+```javascript
+//0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233...
+let calculations = 0;
+const fibonacci = n => { //O(2^n)
+  calculations++;
+  if (n < 2) {
+    return n
+  }
+  return fibonacci(n-1) + fibonacci(n-2);
+}
+fibonacci(10)
+calculations
+
+calculations = 0
+const fibonacciMaster = () => { //O(n)
+  let cache = {};
+  return function fib(n) {
+    calculations++;
+    if (n in cache) {
+      return cache[n];
+    } else {
+      if (n < 2) {
+        return n;
+      } else {
+        cache[n] = fib(n-1) + fib(n-2);
+        return cache[n];
+      }
+    }
+  }
+}
+const fasterFib = fibonacciMaster();
+fasterFib(10)
+calculations
+
+const fibonacciMaster2 = n => {
+  let answer = [0, 1];
+  for ( let i = 2; i <= n; i++) {
+    answer.push(answer[i-2]+ answer[i-1]);
+  }
+  return answer.pop();
+}
+fibonacciMaster2(10)
 ```
 
 **[⬆ back to top](#table-of-contents)**
