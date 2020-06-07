@@ -124,6 +124,7 @@
     - [Graph Traversals](#graph-traversals)
     - [Dijkstra + Bellman-Ford Algorithms](#dijkstra--bellman-ford-algorithms)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
+    - [Dynamic Programming Introduction](#dynamic-programming-introduction)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
     - [During The Interview](#during-the-interview)
@@ -3312,6 +3313,11 @@ DFS
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 15: Algorithms: Dynamic Programming**
+
+### Dynamic Programming Introduction
+
+- It is an optimization technique
+- Do you have something you can cache? Dynamic Programming
 
 **[⬆ back to top](#table-of-contents)**
 
