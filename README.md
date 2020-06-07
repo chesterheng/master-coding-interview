@@ -115,6 +115,7 @@
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
     - [Searching + Traversal Introduction](#searching--traversal-introduction)
     - [Linear Search](#linear-search)
+    - [Binary Search](#binary-search)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -2787,6 +2788,37 @@ beasts.indexOf('Godzilla'); // O(n)
 beasts.findIndex(item => item === 'Godzilla');  // O(n)
 beasts.find(item => item === 'Godzilla'); // O(n)
 beasts.includes('Godzilla'); // O(n)
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Binary Search
+
+```javascript
+const binarySearch = (array, x, start = 0, end = array.length-1) => { 
+
+  // Base Condition 
+  if (start > end) return false; 
+  
+  // Find the middle index 
+  let mid=Math.floor((start + end)/2); 
+  
+  // Compare mid with given key x 
+  if (array[mid]===x) return true; 
+  
+  // If element at mid is greater than x, 
+  // search in the left half of mid 
+  if(array[mid] > x)  
+    return binarySearch(array, x, start, mid-1); 
+  else
+    // If element at mid is smaller than x, 
+    // search in the right half of mid 
+    return binarySearch(array, x, mid+1, end); 
+}
+
+const numbers = [1, 3, 5, 7, 8, 9]; 
+binarySearch(numbers, 5, 0, numbers.length-1)
+binarySearch(numbers, 6, 0, numbers.length-1)
 ```
 
 **[⬆ back to top](#table-of-contents)**
