@@ -92,6 +92,7 @@
     - [Stack Overflow](#stack-overflow)
     - [Anatomy Of Recursion](#anatomy-of-recursion)
     - [Exercise: Factorial](#exercise-factorial)
+    - [Exercise: Fibonacci](#exercise-fibonacci)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -2345,6 +2346,36 @@ const findFactorialIterative = number => { // O(n)
 findFactorialRecursive(5)
 findFactorialIterative(5)
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Fibonacci
+
+```javascript
+// Given a number N return the index value of the Fibonacci sequence, where the sequence is:
+
+// 0  1  2  3  4  5  6  7   8
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 ...
+// the pattern of the sequence is that each value is the sum of the 2 previous values, that means that for N=5 → 2+3
+
+//For example: fibonacciRecursive(6) should return 8
+
+const fibonacciIterative = n => {
+  const arr = [0, 1];
+  for (let i = 2; i <= n; i++){
+    arr.push(arr[i - 2] + arr[i -1]);
+  }
+ return arr[n];
+}
+fibonacciIterative(3);
+
+const fibonacciRecursive = n => {
+  if(n <= 1) return n; 
+  return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+}
+fibonacciRecursive(6)
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 13: Algorithms: Sorting**
