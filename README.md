@@ -118,6 +118,7 @@
     - [Binary Search](#binary-search)
     - [BFS vs DFS](#bfs-vs-dfs)
     - [breadthFirstSearch()](#breadthfirstsearch)
+    - [PreOrder, InOrder, PostOrder](#preorder-inorder-postorder)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -3049,6 +3050,21 @@ tree.BreadthFirstSearchR([tree.root], [])
 //1  6  15  170
 // BFS - [9, 4, 20, 1, 6, 15, 170]
 ```
+**[⬆ back to top](#table-of-contents)**
+
+### PreOrder, InOrder, PostOrder
+
+```javascript
+In Order - left, root, right
+In Order - [1, 4, 6, 9, 15, 20, 170]
+
+Pre Order - root, left, right (use to re-create the tree)
+Pre Order - [9, 4, 1, 6, 20, 15, 170]
+
+Post Order - left, right, root
+Post Order - [1, 6, 4, 15, 170, 20, 9]
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 15: Algorithms: Dynamic Programming**
