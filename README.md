@@ -96,6 +96,7 @@
     - [Recursive VS Iterative](#recursive-vs-iterative)
     - [When To Use Recursion](#when-to-use-recursion)
     - [Exercise: Reverse String With Recursion](#exercise-reverse-string-with-recursion)
+    - [Recursion Review](#recursion-review)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -2427,6 +2428,15 @@ const reverseStringRecursive = str => {
 }
 reverseStringRecursive('yoyo mastery')
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Recursion Review
+
+- Merge Sort
+- Quick Sort
+- Tree Traversal
+- Graph Traversal
 
 **[⬆ back to top](#table-of-contents)**
 
