@@ -56,6 +56,7 @@
     - [Exercise: First Recurring Character](#exercise-first-recurring-character)
     - [Hash Tables Review](#hash-tables-review)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
+    - [What Is A Linked List?](#what-is-a-linked-list)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
@@ -1242,6 +1243,20 @@ Con
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 8: Data Structures: Linked Lists**
+
+### What Is A Linked List?
+
+- head -> apples
+- tail -> pears
+
+const basket = ['apples', 'grapes', 'pears']
+
+linked list: apples --> grapes --> pears
+
+apples
+8947 --> grapes
+          8742 --> pears
+                    372 --> null
 
 **[⬆ back to top](#table-of-contents)**
 
