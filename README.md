@@ -69,6 +69,7 @@
     - [Stacks](#stacks)
     - [Queues](#queues)
     - [Stacks VS Queues](#stacks-vs-queues)
+    - [Exercise: Stack Implementation (Linked Lists)](#exercise-stack-implementation-linked-lists)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1654,6 +1655,65 @@ Stacks
 Queues
 
 - Implement with Linked Lists
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Stack Implementation (Linked Lists)
+
+```javascript
+class Node {
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Stack {
+  constructor(){
+    this.top = null;
+    this.bottom = null;
+    this.length = 0;
+  }
+  peek() {
+    return this.top;
+  }
+  push(value){
+    const newNode = new Node(value);
+    if (this.length === 0) {
+      this.top = newNode;
+      this.bottom = newNode;
+    } else {
+      const holdingPointer = this.top;
+      this.top = newNode;
+      this.top.next = holdingPointer;
+    }
+    this.length++;
+    return this;
+  }
+  pop(){
+    if (!this.top) {
+      return null;
+    }
+    if (this.top === this.bottom) {
+      this.bottom = null;
+    }
+    const holdingPointer = this.top;
+    this.top = this.top.next;
+    this.length--;
+    return this;
+  }
+}
+
+const myStack = new Stack();
+myStack.peek();
+myStack.push('google');
+myStack.push('udemy');
+myStack.push('discord');
+myStack.peek();
+myStack.pop();
+myStack.pop();
+myStack.pop();
+```
 
 **[⬆ back to top](#table-of-contents)**
 
