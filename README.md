@@ -116,6 +116,7 @@
     - [Searching + Traversal Introduction](#searching--traversal-introduction)
     - [Linear Search](#linear-search)
     - [Binary Search](#binary-search)
+    - [BFS vs DFS](#bfs-vs-dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -2805,7 +2806,7 @@ const binarySearch = (array, x, start = 0, end = array.length-1) => {
   
   // Compare mid with given key x 
   if (array[mid]===x) return true; 
-  
+
   // If element at mid is greater than x, 
   // search in the left half of mid 
   if(array[mid] > x)  
@@ -2820,6 +2821,43 @@ const numbers = [1, 3, 5, 7, 8, 9];
 binarySearch(numbers, 5, 0, numbers.length-1)
 binarySearch(numbers, 6, 0, numbers.length-1)
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### BFS vs DFS
+
+[What is the time and space complexity of a breadth first and depth first tree traversal?](https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr)
+
+```
+//     9
+//  4     20
+//1  6  15  170
+// BFS - [9, 4, 20, 1, 6, 15, 170]
+// DFS - [9, 4, 1, 6, 20, 15, 170]
+```
+
+BFS
+
+| Pros          | Cons        |
+| ------------- | ----------- |
+| Shortest Path | More Memory |
+| Closer Nodes  |             |
+
+DFS
+
+| Pros         | Cons              |
+| ------------ | ----------------- |
+| Less Memory  | Does Path Exists? |
+| Can Get Slow |                   |
+
+| Question                                                    | BFS or DFS                          |
+| ----------------------------------------------------------- | ----------------------------------- |
+| If you know a solution is not far from the root of the tree | Does Path Exists?                   |
+| If the tree is very deep and solutions are rare             | BFS (DFS will take long time)       |
+| If the tree is very wide                                    | DFS (BFS will need too much memory) |
+| If solutions are frequent but located deep in the tree      | DFS                                 |
+| determining whether a path exists between two nodes         | DFS                                 |
+| Finding the shortest path                                   | BFS                                 |
 
 **[⬆ back to top](#table-of-contents)**
 
