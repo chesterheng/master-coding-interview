@@ -2614,6 +2614,12 @@ const answer = mergeSort(numbers);
 
 **[⬆ back to top](#table-of-contents)**
 
+Stable VS Unstable Algorithms
+
+[What is stability in sorting algorithms and why is it important?](https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important)
+
+**[⬆ back to top](#table-of-contents)**
+
 ## **Section 14: Algorithms: Searching + BFS + DFS**
 
 **[⬆ back to top](#table-of-contents)**
