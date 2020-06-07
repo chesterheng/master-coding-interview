@@ -114,6 +114,7 @@
     - [Sorting Interview](#sorting-interview)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
     - [Searching + Traversal Introduction](#searching--traversal-introduction)
+    - [Linear Search](#linear-search)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
@@ -2774,6 +2775,19 @@ Can we beat O(nlogn)?
 - Binary Search
 - Depth First Search
 - Breadth First Search
+
+**[⬆ back to top](#table-of-contents)**
+
+### Linear Search
+
+```javascript
+const beasts = ['Centaur', 'Godzilla', 'Mosura', 'Minotaur', 'Hydra', 'Nessie'];
+
+beasts.indexOf('Godzilla'); // O(n)
+beasts.findIndex(item => item === 'Godzilla');  // O(n)
+beasts.find(item => item === 'Godzilla'); // O(n)
+beasts.includes('Godzilla'); // O(n)
+```
 
 **[⬆ back to top](#table-of-contents)**
 
