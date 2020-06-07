@@ -71,6 +71,8 @@
     - [Stacks VS Queues](#stacks-vs-queues)
     - [Exercise: Stack Implementation (Linked Lists)](#exercise-stack-implementation-linked-lists)
     - [Exercise: Stack Implementation (Array)](#exercise-stack-implementation-array)
+    - [Exercise: Queue Implementation (Linked Lists)](#exercise-queue-implementation-linked-lists)
+    - [Exercise: Queue Implementation (Array)](#exercise-queue-implementation-array)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1675,10 +1677,10 @@ class Stack {
     this.bottom = null;
     this.length = 0;
   }
-  peek() {
+  peek() {  // O(1)
     return this.top;
   }
-  push(value){
+  push(value){  // O(1)
     const newNode = new Node(value);
     if (this.length === 0) {
       this.top = newNode;
@@ -1691,7 +1693,7 @@ class Stack {
     this.length++;
     return this;
   }
-  pop(){
+  pop(){  // O(1)
     if (!this.top) {
       return null;
     }
@@ -1725,15 +1727,15 @@ class Stack {
   constructor(){
     this.array = [];
   }
-  peek() {
+  peek() {  // O(1)
     return this.array[this.array.length-1];
   }
   push(value){
-    this.array.push(value);
+    this.array.push(value); // O(1)
     return this;
   }
   pop(){
-    this.array.pop();
+    this.array.pop(); // O(1)
     return this;
   }
 }
@@ -1750,6 +1752,97 @@ myStack.pop();
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+### Exercise: Queue Implementation (Linked Lists)
+
+```javascript
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+class Queue {
+  constructor(){
+    this.first = null;
+    this.last = null;
+    this.length = 0;
+  }
+  peek() {  // O(1)
+    return this.first;
+  }
+  enqueue(value){ // O(1)
+    const newNode = new Node(value);
+    if (this.length === 0) {
+      this.first = newNode;
+      this.last = newNode;
+    } else {
+      this.last.next = newNode;
+      this.last = newNode;
+    }
+    this.length++;
+    return this;
+  }
+  dequeue(){  // O(1)
+    if (!this.first) {
+      return null;
+    }
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    const holdingPointer = this.first;
+    this.first = this.first.next;
+    this.length--;
+    return this;
+  }
+}
+
+const myQueue = new Queue();
+myQueue.peek();
+myQueue.enqueue('Joy');
+myQueue.enqueue('Matt');
+myQueue.enqueue('Pavel');
+myQueue.peek();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.peek();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Queue Implementation (Array)
+
+```javascript
+class Queue {
+  constructor(){
+    this.array = [];
+  }
+  peek() {
+    return this.array[0]; // O(1)
+  }
+  enqueue(value){
+    this.array.push(value); // O(1)
+    return this;
+  }
+  dequeue(){
+    this.array.shift(); // O(n)
+    return this;
+  }
+}
+
+const myQueue = new Queue();
+myQueue.peek();
+myQueue.enqueue('Joy');
+myQueue.enqueue('Matt');
+myQueue.enqueue('Pavel');
+myQueue.peek();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.peek();
+```
 
 ## **Section 10: Data Structures: Trees**
 
