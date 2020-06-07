@@ -86,6 +86,7 @@
     - [Trie](#trie)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
     - [Types Of Graphs](#types-of-graphs)
+    - [Exercise: Graph Implementation](#exercise-graph-implementation)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
@@ -2228,6 +2229,59 @@ Real life example
 - Google Maps: Various locations are represented as vertices and the roads are represented as edges and graph theory is used to find shortest path between two nodes.
 - Recommendations on e-commerce websites: The “Recommendations for you” section on various e-commerce websites uses graph theory to recommend items of similar type to user’s choice.
 - Graph theory is also used to study molecules in chemistry and physics.
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Graph Implementation
+
+```javascript
+class Graph { 
+  constructor() { 
+    this.numberOfNodes = 0; 
+    this.adjacentList = {}; 
+  } 
+  addVertex(node)  { 
+    this.adjacentList[node] = []; 
+    this.numberOfNodes++;
+  } 
+  addEdge(node1, node2) { 
+    //uniderected Graph 
+    this.adjacentList[node1].push(node2); 
+    this.adjacentList[node2].push(node1); 
+  } 
+  showConnections() { 
+    const allNodes = Object.keys(this.adjacentList); 
+    for (let node of allNodes) { 
+      let nodeConnections = this.adjacentList[node]; 
+      let connections = ""; 
+      let vertex;
+      for (vertex of nodeConnections) {
+        connections += vertex + " ";
+      } 
+      console.log(node + "-->" + connections); 
+    } 
+  } 
+} 
+
+const myGraph = new Graph();
+myGraph.addVertex('0');
+myGraph.addVertex('1');
+myGraph.addVertex('2');
+myGraph.addVertex('3');
+myGraph.addVertex('4');
+myGraph.addVertex('5');
+myGraph.addVertex('6');
+myGraph.addEdge('3', '1'); 
+myGraph.addEdge('3', '4'); 
+myGraph.addEdge('4', '2'); 
+myGraph.addEdge('4', '5'); 
+myGraph.addEdge('1', '2'); 
+myGraph.addEdge('1', '0'); 
+myGraph.addEdge('0', '2'); 
+myGraph.addEdge('6', '5');
+myGraph
+myGraph.showConnections(); 
+```
 
 **[⬆ back to top](#table-of-contents)**
 
