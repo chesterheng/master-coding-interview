@@ -76,6 +76,7 @@
     - [Queues Using Stacks](#queues-using-stacks)
     - [Stacks + Queues Review](#stacks--queues-review)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
+    - [Trees Introduction](#trees-introduction)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
@@ -604,7 +605,7 @@ arrayOfHiNTimes(6)
 
 [Interview Cheat Sheet](interview-cheatsheet.pdf)
 
-Data Structures
+[Data Structures](Top 8 Data Structures for Coding Interviews and practice interview questions)
 
 - Arrays
 - Stacks
@@ -1911,6 +1912,16 @@ Cons
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Data Structures: Trees**
+
+### Trees Introduction
+
+Real life examples
+
+- DOM
+- Chess Game use tree data structure to make decisions
+- Facebook comments
+- Family Tree
+- Abstract Syntax Tree
 
 **[⬆ back to top](#table-of-contents)**
 
