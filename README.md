@@ -95,6 +95,7 @@
     - [Exercise: Fibonacci](#exercise-fibonacci)
     - [Recursive VS Iterative](#recursive-vs-iterative)
     - [When To Use Recursion](#when-to-use-recursion)
+    - [Exercise: Reverse String With Recursion](#exercise-reverse-string-with-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -2401,14 +2402,31 @@ Cons
 
 ### When To Use Recursion
 
-Every time you are using a tree or converting
-something into a tree, consider recursion
+[Real-world examples of recursion](https://stackoverflow.com/questions/105838/real-world-examples-of-recursion)
+
+Every time you are using a tree or converting something into a tree, consider recursion
 
 - Divided into a number of subproblems that are smaller instances of the same problem
 - Each instance of the subproblem is identical in nature
 - The solutions of each subproblem can be combined to solve the problem at hand.
 
 Divide and Conquer using Recursion
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Reverse String With Recursion
+
+```javascript
+//Implement a function that reverses a string using iteration...and then recursion!
+const reverseString = str => str.split('').reverse().join('');
+reverseString('yoyo mastery')
+
+const reverseStringRecursive = str => {
+  if(str.length === 1) return str;
+  return reverseStringRecursive(str.substring(1)).concat(str[0]);
+}
+reverseStringRecursive('yoyo mastery')
+```
 
 **[⬆ back to top](#table-of-contents)**
 
