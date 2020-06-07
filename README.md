@@ -100,6 +100,8 @@
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
     - [Sorting Introduction](#sorting-introduction)
     - [The Issue With sort()](#the-issue-with-sort)
+    - [Sorting Algorithms](#sorting-algorithms)
+    - [Exercise: Bubble Sort](#exercise-bubble-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2470,6 +2472,33 @@ array1.sort();
 console.log(array1);
 // expected output: Array [1, 100000, 21, 30, 4]
 ```
+**[⬆ back to top](#table-of-contents)**
+
+###  Sorting Algorithms
+
+[Sorting Algorithms Animations](https://www.toptal.com/developers/sorting-algorithms)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Bubble Sort
+
+```javascript
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const bubbleSort = array => {
+  const length = array.length;
+  for (let i = 0; i < length; i++) {
+    for (let j = 0; j < length; j++) { 
+      if(array[j] > array[j+1]) {
+        [array[j+1], array[j]] = [array[j], array[j+1]];
+      }
+    }        
+  }
+}
+
+bubbleSort(numbers);
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Algorithms: Searching + BFS + DFS**
