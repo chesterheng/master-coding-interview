@@ -36,6 +36,8 @@
     - [Exercise: Interview Question](#exercise-interview-question)
     - [Review Google Interview](#review-google-interview)
   - [**Section 5: Data Structures: Introduction**](#section-5-data-structures-introduction)
+    - [How to choose the right Data Structure?](#how-to-choose-the-right-data-structure)
+    - [Examples of Data Structures in real life](#examples-of-data-structures-in-real-life)
     - [What Is A Data Structure?](#what-is-a-data-structure)
     - [How Computers Store Data](#how-computers-store-data)
     - [Data Structures In Different Languages](#data-structures-in-different-languages)
@@ -60,6 +62,7 @@
     - [What Is A Linked List?](#what-is-a-linked-list)
     - [Exercise: Why Linked Lists?](#exercise-why-linked-lists)
     - [Doubly Linked Lists](#doubly-linked-lists)
+    - [Linked Lists Review](#linked-lists-review)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
@@ -841,6 +844,26 @@ hasPairWithSum2([1, 2, 4, 4], 8)
 
 ## **Section 5: Data Structures: Introduction**
 
+### How to choose the right Data Structure?
+
+[Choosing the Right Data Structure to solve problems](https://www.careerdrill.com/blog/coding-interview/choosing-the-right-data-structure-to-solve-problems/)
+
+![](choose-data-structures.png)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Examples of Data Structures in real life
+
+- [Data Structures](data-structures.pdf)
+- [Real-Life Examples of Data Structures](data-structures-in-real-life.pdf)
+- [Examples of Data Structures in real life](https://stackoverflow.com/questions/54466641/examples-of-data-structures-in-real-life)
+- [Data Structures In The Real World — Linked List](https://medium.com/journey-of-one-thousand-apps/data-structures-in-the-real-world-508f5968545a)
+- [Real world data structures: tables and graphs in JavaScript](https://www.freecodecamp.org/news/real-world-data-structures-tables-and-graphs-in-javascript-bcb70c929495/)
+- [The Real-Life Applications Of Graph Data Structures You Must Know](https://leapgraph.com/graph-data-structures-applications)
+- [How do I use algorithms and data structure in real life?](https://www.onlinebooksreview.com/articles/how-do-i-use-algorithms-and-data-structures-in-real-life)
+
+**[⬆ back to top](#table-of-contents)**
+
 ### What Is A Data Structure?
 
 - A data structure is a collection of values.
@@ -1266,14 +1289,14 @@ firstRecurringCharacter3([2,5,5,2,3,5,1,2,4])
 
 [Completed JavaScript Data Structure Course, and Here is What I Learned About Hash Table.](https://dev.to/maikomiyazaki/completed-javascript-data-structure-course-and-here-is-what-i-learned-about-hash-table-2ecm)
 
-Pro
+Pros
 
 - Fast lookups*
 - Fast inserts
 - Flexible Keys
 *Good collision resolution needed
 
-Con
+Cons
 
 - Unordered
 - Slow key interation
@@ -1509,6 +1532,22 @@ myLinkedList.printList()
 myLinkedList.remove(2)
 myLinkedList.reverse()
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Linked Lists Review
+
+Pros
+
+- Fast Insertion
+- Fast Deletion
+- Ordered
+- Flexible Size
+
+Cons
+
+- Slow Lookup
+- More Memory
 
 **[⬆ back to top](#table-of-contents)**
 
