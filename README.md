@@ -108,6 +108,7 @@
     - [O(n log n)](#on-log-n)
     - [Exercise: Merge Sort](#exercise-merge-sort)
     - [Quick Sort](#quick-sort)
+    - [Which Sort Is Best?](#which-sort-is-best)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2658,6 +2659,23 @@ const quickSort = (array, left = 0, right = array.length - 1) => {
 
 quickSort(numbers);
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Which Sort Is Best?
+
+![](array-sorting-algorithms.jpg)
+
+[Criteria for Choosing a Sorting Algorithm](https://learning.oreilly.com/library/view/algorithms-in-a/9780596516246/ch04s09.html)
+
+| Criteria                                   | Sorting algorithm |
+| ------------------------------------------ | ----------------- |
+| Only a few items                           | Insertion Sort    |
+| Items are mostly sorted already            | Insertion Sort    |
+| Concerned about worst-case scenarios       | Heap Sort         |
+| Interested in a good average-case result   | Quicksort         |
+| Items are drawn from a dense universe      | Bucket Sort       |
+| Desire to write as little code as possible | Insertion Sort    |
 
 **[⬆ back to top](#table-of-contents)**
 
