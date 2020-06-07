@@ -59,11 +59,13 @@
     - [Exercise: First Recurring Character](#exercise-first-recurring-character)
     - [Hash Tables Review](#hash-tables-review)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
+    - [Linked Lists Introduction](#linked-lists-introduction)
     - [What Is A Linked List?](#what-is-a-linked-list)
     - [Exercise: Why Linked Lists?](#exercise-why-linked-lists)
     - [Doubly Linked Lists](#doubly-linked-lists)
     - [Linked Lists Review](#linked-lists-review)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
+    - [Stacks](#stacks)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -907,10 +909,18 @@ Question
 
 ## **Section 6: Data Structures: Arrays**
 
+### Arrays Introduction
+
+Array vs Object
+
 - Arrays for storing ordered collections.
 - Objects for storing keyed collections.
 
-### Arrays Introduction
+Real life examples
+
+- [Cinema Book Challenge](https://www.101computing.net/cinema-booking-challenge/)
+
+Array
 
 | Operation | Big O |
 | --------- | ----- |
@@ -1131,6 +1141,13 @@ Examples of Hash Tables
 - [Array vs Set vs Map vs Object](https://codeburst.io/array-vs-set-vs-map-vs-object-real-time-use-cases-in-javascript-es6-47ee3295329b)
 - [ES6 — Map vs Object — What and when?](https://medium.com/front-end-weekly/es6-map-vs-object-what-and-when-b80621932373)
 - [ES6 — Set vs Array — What and when?](https://medium.com/front-end-weekly/es6-set-vs-array-what-and-when-efc055655e1a)
+- [The Importance of Hash Tables](https://medium.com/coderbyte/importance-of-hash-tables-c429a2b523b8)
+
+Real life examples
+
+- Suppose I stay in a hotel for a few days, because I attend a congress on hashing. At the end of the day, when I return to the hotel, I ask the desk clerk if there are any messages for me. Behind his back is a dovecot-like cupboard, with 26 entries, labeled A to Z. Because he knows my last name, he goes to the slot labeled W, and takes out three letters. One is for Robby Williams, one is for Jimmy Webb, and one is for me.
+
+The clerk only had to inspect three letters. How many letters would he have to inspect if there would have been only one letter box?
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -1281,6 +1298,20 @@ firstRecurringCharacter3([2,5,1,2,3,5,1,2,4])
 firstRecurringCharacter3([2,1,1,2,3,5,1,2,4])
 firstRecurringCharacter3([2,3,4,5])
 firstRecurringCharacter3([2,5,5,2,3,5,1,2,4])
+
+const firstRecurringCharacter4 = input => {
+  const hashtable = {}
+  for (let item of input) {
+    if(!hashtable[item]) hashtable[item] = true
+    else return item; 
+  }
+  return undefined;
+}
+
+firstRecurringCharacter4([2,5,1,2,3,5,1,2,4])
+firstRecurringCharacter4([2,1,1,2,3,5,1,2,4])
+firstRecurringCharacter4([2,3,4,5])
+firstRecurringCharacter4([2,5,5,2,3,5,1,2,4])
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -1304,6 +1335,21 @@ Cons
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 8: Data Structures: Linked Lists**
+
+### Linked Lists Introduction
+
+Type
+
+- Single Linked List
+- Double Linked List
+
+Real life examples
+
+- Image viewer – Previous and next images are linked, hence can be accessed by next and previous button.
+- Previous and next page in web browser – We can access previous and next url searched in web browser by pressing back and next button since, they are linked as linked list.
+- Music Player – Songs in music player are linked to previous and next song. you can play songs either from starting or ending of the list.
+
+**[⬆ back to top](#table-of-contents)**
 
 ### What Is A Linked List?
 
@@ -1552,6 +1598,22 @@ Cons
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 9: Data Structures: Stacks + Queues**
+
+### Stacks
+
+Real life examples
+
+- Browser history
+- Store undo/redo operations in a word processor
+
+Stacks: LIFO
+
+| Operation | Big O |
+| --------- | ----- |
+| lookup    | O(n)  |
+| pop       | O(1)  |
+| push      | O(1)  |
+| peek      | O(1)  |
 
 **[⬆ back to top](#table-of-contents)**
 
