@@ -107,6 +107,7 @@
     - [Insertion Sort](#insertion-sort)
     - [O(n log n)](#on-log-n)
     - [Exercise: Merge Sort](#exercise-merge-sort)
+    - [Quick Sort](#quick-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2617,6 +2618,46 @@ const answer = mergeSort(numbers);
 Stable VS Unstable Algorithms
 
 [What is stability in sorting algorithms and why is it important?](https://stackoverflow.com/questions/1517793/what-is-stability-in-sorting-algorithms-and-why-is-it-important)
+
+**[⬆ back to top](#table-of-contents)**
+
+### Quick Sort
+
+```javascript
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const swap = (array, a, b) => [array[a], array[b]] = [array[b], array[a]];
+const partition = (array, pivot, left, right) => {
+  let pivotValue = array[pivot];
+  let partitionIndex = left;
+
+  for(let i = left; i < right; i++) {
+    if(array[i] < pivotValue){
+      swap(array, i, partitionIndex);
+      partitionIndex++;
+    }
+  }
+  swap(array, right, partitionIndex);
+  return partitionIndex;
+}
+
+const quickSort = (array, left = 0, right = array.length - 1) => {
+  let pivot;
+  let partitionIndex;
+
+  if(left < right) {
+    pivot = right;
+    partitionIndex = partition(array, pivot, left, right);
+    
+    //sort left and right
+    quickSort(array, left, partitionIndex - 1);
+    quickSort(array, partitionIndex + 1, right);
+  }
+  return array;
+}
+
+quickSort(numbers);
+```
 
 **[⬆ back to top](#table-of-contents)**
 
