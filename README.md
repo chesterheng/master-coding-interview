@@ -85,6 +85,7 @@
     - [Binary Heaps](#binary-heaps)
     - [Trie](#trie)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
+    - [Types Of Graphs](#types-of-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
@@ -2209,6 +2210,24 @@ Real life example
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 11: Data Structures: Graphs**
+
+### Types Of [Graphs](https://visualgo.net/en/graphds)
+
+- Directed - Twitter
+- Undirected - Facebook
+- Weighted - Shortest path
+- Unweighted
+- Cyclic - Google map
+- Acyclic
+- [Data Structures 101: Graphs — A Visual Introduction for Beginners](https://www.freecodecamp.org/news/data-structures-101-graphs-a-visual-introduction-for-beginners-6d88f36ec768/)
+
+[Real world examples](https://leapgraph.com/graph-data-structures-applications)
+
+- [The Internet map](https://internet-map.net/)
+- Facebook: Each user is represented as a vertex and two people are friends when there is an edge between two vertices. Similarly friend suggestion also uses graph theory concept.
+- Google Maps: Various locations are represented as vertices and the roads are represented as edges and graph theory is used to find shortest path between two nodes.
+- Recommendations on e-commerce websites: The “Recommendations for you” section on various e-commerce websites uses graph theory to recommend items of similar type to user’s choice.
+- Graph theory is also used to study molecules in chemistry and physics.
 
 **[⬆ back to top](#table-of-contents)**
 
