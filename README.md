@@ -16,9 +16,7 @@
     - [O(n)](#on)
     - [O(1)](#o1)
     - [Exercise: Big O Calculation](#exercise-big-o-calculation)
-    - [Solution: Big O Calculation](#solution-big-o-calculation)
     - [Exercise: Big O Calculation 2](#exercise-big-o-calculation-2)
-    - [Solution: Big O Calculation 2](#solution-big-o-calculation-2)
     - [Simplifying Big O](#simplifying-big-o)
     - [Big O Rule 1 - Worst Case](#big-o-rule-1---worst-case)
     - [Big O Rule 2 - Remove Constants](#big-o-rule-2---remove-constants)
@@ -91,6 +89,7 @@
     - [Data Structures Review](#data-structures-review)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
     - [Introduction to Algorithms](#introduction-to-algorithms)
+    - [Stack Overflow](#stack-overflow)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
@@ -304,26 +303,6 @@ logFirstTwoBoxes(boxes) // O(2)
 // What is the Big O of the below function?
 // Hint, you may want to go line by line
 const funChallenge = (input) => {
-  let a = 10
-  a = 50 + 3
-
-  for (let i = 0; i < input.length; i++) {
-    anotherFunction()
-    let stranger = true
-    a++
-  }
-  return a
-}
-
-funChallenge()
-```
-
-**[⬆ back to top](#table-of-contents)**
-
-### Solution: Big O Calculation
-
-```javascript
-const funChallenge = (input) => {
   let a = 10 // O(1)
   a = 50 + 3 // O(1)
 
@@ -346,32 +325,8 @@ funChallenge()
 ### Exercise: Big O Calculation 2
 
 ```javascript
-// What is the Big O of the below function? (Hint, you may want to go line by line)
-const anotherFunChallenge = (input) => {
-  let a = 5
-  let b = 10
-  let c = 50
-  for (let i = 0; i < input; i++) {
-    let x = i + 1
-    let y = i + 2
-    let z = i + 3
-  }
-  for (let j = 0; j < input; j++) {
-    let p = j * 2
-    let q = j * 2
-  }
-  let whoAmI = "I don't know"
-}
-
-anotherFunChallenge(5)
-```
-
-**[⬆ back to top](#table-of-contents)**
-
-### Solution: Big O Calculation 2
-
-```javascript
-// What is the Big O of the below function? (Hint, you may want to go line by line)
+// What is the Big O of the below function? 
+// (Hint, you may want to go line by line)
 const anotherFunChallenge = (input) => {
   let a = 5 //O(1)
   let b = 10 //O(1)
@@ -2328,6 +2283,17 @@ Con
 | Sorting               |
 | BFS + DFS (Searching) |
 | Dynamic Programming   |
+
+**[⬆ back to top](#table-of-contents)**
+
+### Stack Overflow
+
+```javascript
+function inception() {
+  debugger;
+  inception();
+}
+```
 
 **[⬆ back to top](#table-of-contents)**
 
