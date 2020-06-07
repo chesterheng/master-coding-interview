@@ -74,6 +74,7 @@
     - [Exercise: Queue Implementation (Linked Lists)](#exercise-queue-implementation-linked-lists)
     - [Exercise: Queue Implementation (Array)](#exercise-queue-implementation-array)
     - [Queues Using Stacks](#queues-using-stacks)
+    - [Stacks + Queues Review](#stacks--queues-review)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1892,6 +1893,20 @@ myQueue.dequeue();
 myQueue.dequeue();
 myQueue.peek();
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Stacks + Queues Review
+
+Pros
+
+- Fast Operations
+- Fast Peek
+- Ordered
+
+Cons
+
+- Slow Lookup
 
 **[⬆ back to top](#table-of-contents)**
 
