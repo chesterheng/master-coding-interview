@@ -128,6 +128,7 @@
     - [Memoization](#memoization)
     - [Memoization](#memoization-1)
     - [Fibonacci and Dynamic Programming](#fibonacci-and-dynamic-programming)
+    - [Interview Questions: Dynamic Programming](#interview-questions-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
     - [Section Overview](#section-overview)
     - [During The Interview](#during-the-interview)
@@ -3431,6 +3432,14 @@ const fibonacciMaster2 = n => {
 }
 fibonacciMaster2(10)
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Interview Questions: Dynamic Programming
+
+- [House Robber](https://leetcode.com/problems/house-robber/) 
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 **[⬆ back to top](#table-of-contents)**
 
