@@ -77,6 +77,7 @@
     - [Stacks + Queues Review](#stacks--queues-review)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
     - [Trees Introduction](#trees-introduction)
+    - [Binary Trees](#binary-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
@@ -1922,6 +1923,44 @@ Real life examples
 - Facebook comments
 - Family Tree
 - Abstract Syntax Tree
+
+**[⬆ back to top](#table-of-contents)**
+
+### Binary Trees
+
+Types of Binary Tree
+
+- Perfect Binary Tree
+- Full Binary Tree
+
+[Binary Search Tree](https://visualgo.net/bn/bst?slide=1)
+
+| Operation | Big O    |
+| --------- | -------- |
+| lookup    | O(log n) |
+| insert    | O(log n) |
+| delete    | O(log n) |
+
+O(log n)
+
+- Level 0: 2^0 = 1
+- Level 1: 2^1 = 2
+- Level 2: 2^2 = 4
+- Level 3: 2^3 = 8
+
+Nos. of nodes = 2 ^ h - 1
+log nodes = steps
+
+log 100 = 2
+10^2 = 100
+
+```
+   101
+   /  \
+  33   105
+ / \    / \
+9  37  104 144
+```
 
 **[⬆ back to top](#table-of-contents)**
 
