@@ -105,6 +105,8 @@
     - [Exercise: Selection Sort](#exercise-selection-sort)
     - [Dancing Algorithms](#dancing-algorithms)
     - [Insertion Sort](#insertion-sort)
+    - [O(n log n)](#on-log-n)
+    - [Exercise: Merge Sort](#exercise-merge-sort)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2556,6 +2558,58 @@ const insertionSort = array => {
 }
 
 insertionSort(numbers);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### O(n log n)
+
+Divide & Conquer
+
+- Merge Sort
+- Quick Sort
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Merge Sort
+
+```javascript
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+const mergeSort = array => {
+  // base case
+  if (array.length === 1) {
+    return array
+  }
+  // Split Array in into right and left
+  const length = array.length;
+  const middle = Math.floor(length / 2)
+  const left = array.slice(0, middle) 
+  const right = array.slice(middle)
+
+  return merge(
+    mergeSort(left),
+    mergeSort(right)
+  )
+}
+
+const merge = (left, right) => {
+  const result = [];
+  let leftIndex = 0;
+  let rightIndex = 0;
+  while(leftIndex < left.length && rightIndex < right.length){
+    if(left[leftIndex] < right[rightIndex]){
+      result.push(left[leftIndex]);
+      leftIndex++;
+    } else{
+      result.push(right[rightIndex]);
+      rightIndex++
+    }
+  }  
+  return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+}
+
+const answer = mergeSort(numbers);
 ```
 
 **[⬆ back to top](#table-of-contents)**
