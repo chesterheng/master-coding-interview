@@ -103,6 +103,7 @@
     - [Sorting Algorithms](#sorting-algorithms)
     - [Exercise: Bubble Sort](#exercise-bubble-sort)
     - [Exercise: Selection Sort](#exercise-selection-sort)
+    - [Dancing Algorithms](#dancing-algorithms)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2526,6 +2527,12 @@ const selectionSort = array => {
 
 selectionSort(numbers);
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Dancing Algorithms
+
+[AlgoRythmics](https://www.youtube.com/user/AlgoRythmics/videos)
 
 **[⬆ back to top](#table-of-contents)**
 
