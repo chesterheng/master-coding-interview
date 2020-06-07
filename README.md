@@ -57,6 +57,7 @@
     - [Hash Tables Review](#hash-tables-review)
   - [**Section 8: Data Structures: Linked Lists**](#section-8-data-structures-linked-lists)
     - [What Is A Linked List?](#what-is-a-linked-list)
+    - [Exercise: Why Linked Lists?](#exercise-why-linked-lists)
   - [**Section 9: Data Structures: Stacks + Queues**](#section-9-data-structures-stacks--queues)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
@@ -1142,7 +1143,7 @@ Arrays
 
 | Operation | Big O |
 | --------- | ----- |
-| Search    | O(n)  |
+| search    | O(n)  |
 | lookup    | O(1)  |
 | push*     | O(1)  |
 | insert    | O(n)  |
@@ -1257,6 +1258,22 @@ apples
 8947 --> grapes
           8742 --> pears
                     372 --> null
+
+**[⬆ back to top](#table-of-contents)**
+
+### Exercise: Why Linked Lists?
+
+[VisuAlgo Linked List](https://visualgo.net/en/list)
+
+Linked Lists
+
+| Operation | Big O |
+| --------- | ----- |
+| prepend   | O(1)  |
+| append    | O(1)  |
+| lookup    | O(n)  |
+| insert    | O(n)  |
+| delete    | O(n)  |
 
 **[⬆ back to top](#table-of-contents)**
 
