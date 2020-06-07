@@ -98,6 +98,7 @@
     - [Exercise: Reverse String With Recursion](#exercise-reverse-string-with-recursion)
     - [Recursion Review](#recursion-review)
   - [**Section 13: Algorithms: Sorting**](#section-13-algorithms-sorting)
+    - [Sorting Introduction](#sorting-introduction)
   - [**Section 14: Algorithms: Searching + BFS + DFS**](#section-14-algorithms-searching--bfs--dfs)
   - [**Section 15: Algorithms: Dynamic Programming**](#section-15-algorithms-dynamic-programming)
   - [**Section 16: Non Technical Interviews**](#section-16-non-technical-interviews)
@@ -2441,6 +2442,14 @@ reverseStringRecursive('yoyo mastery')
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 13: Algorithms: Sorting**
+
+### Sorting Introduction
+
+- Bubble Sort
+- Insertion Sort
+- Selection Sort
+- Merge Sort
+- Quick Sort
 
 **[⬆ back to top](#table-of-contents)**
 
