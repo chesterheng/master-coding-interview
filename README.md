@@ -73,6 +73,7 @@
     - [Exercise: Stack Implementation (Array)](#exercise-stack-implementation-array)
     - [Exercise: Queue Implementation (Linked Lists)](#exercise-queue-implementation-linked-lists)
     - [Exercise: Queue Implementation (Array)](#exercise-queue-implementation-array)
+    - [Queues Using Stacks](#queues-using-stacks)
   - [**Section 10: Data Structures: Trees**](#section-10-data-structures-trees)
   - [**Section 11: Data Structures: Graphs**](#section-11-data-structures-graphs)
   - [**Section 12: Algorithms: Recursion**](#section-12-algorithms-recursion)
@@ -1843,6 +1844,56 @@ myQueue.dequeue();
 myQueue.dequeue();
 myQueue.peek();
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Queues Using Stacks
+
+```javascript
+class CrazyQueue {
+  constructor() {
+    this.first = [];
+    this.last = [];
+  }
+
+  enqueue(value) {
+    const length = this.first.length;
+    for (let i = 0; i < length; i++) {
+      this.last.push(this.first.pop());
+    }
+    this.last.push(value);
+    return this;
+  }
+
+  dequeue() {
+    const length = this.last.length;
+    for (let i = 0; i < length; i++) {
+      this.first.push(this.last.pop());
+    }
+    this.first.pop();
+    return this;
+  }
+  peek() {
+    if (this.last.length > 0) {
+      return this.last[0];
+    }
+    return this.first[this.first.length - 1];
+  }
+}
+
+const myQueue = new CrazyQueue();
+myQueue.peek();
+myQueue.enqueue('Joy');
+myQueue.enqueue('Matt');
+myQueue.enqueue('Pavel');
+myQueue.peek();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.dequeue();
+myQueue.peek();
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Data Structures: Trees**
 
