@@ -146,11 +146,7 @@
     - [Handling Multiple Offers](#handling-multiple-offers)
     - [Getting A Raise](#getting-a-raise)
     - [Negotiation Master](#negotiation-master)
-  - [**Section 18: Thank You**](#section-18-thank-you)
   - [**Section 19: Extras: Google, Amazon, Facebook Interview Questions**](#section-19-extras-google-amazon-facebook-interview-questions)
-  - [**Section 20: Contributing To Open Source To Gain Experience**](#section-20-contributing-to-open-source-to-gain-experience)
-  - [**Section 21: Bonus: Extra Bits**](#section-21-bonus-extra-bits)
-  - [**Section 22: Extras**](#section-22-extras)
 
 ## **Section 1: Introduction**
 
@@ -3630,22 +3626,12 @@ To Do
 
 **[⬆ back to top](#table-of-contents)**
 
-## **Section 18: Thank You**
-
-**[⬆ back to top](#table-of-contents)**
-
 ## **Section 19: Extras: Google, Amazon, Facebook Interview Questions**
 
-**[⬆ back to top](#table-of-contents)**
-
-## **Section 20: Contributing To Open Source To Gain Experience**
-
-**[⬆ back to top](#table-of-contents)**
-
-## **Section 21: Bonus: Extra Bits**
-
-**[⬆ back to top](#table-of-contents)**
-
-## **Section 22: Extras**
-
+- [Top Interview Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12246878#content)
+- [Amazon Interview Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12246840#content)
+- [Facebook Interview Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12246842#content)
+- [Google Interview Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12246838#content)
+- [Domain Specific Questions](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/learn/lecture/12246846#content)
+   
 **[⬆ back to top](#table-of-contents)**
