@@ -144,6 +144,8 @@
     - [Negotiation 101](#negotiation-101)
     - [Handling An Offer](#handling-an-offer)
     - [Handling Multiple Offers](#handling-multiple-offers)
+    - [Getting A Raise](#getting-a-raise)
+    - [Negotiation Master](#negotiation-master)
   - [**Section 18: Thank You**](#section-18-thank-you)
   - [**Section 19: Extras: Google, Amazon, Facebook Interview Questions**](#section-19-extras-google-amazon-facebook-interview-questions)
   - [**Section 20: Contributing To Open Source To Gain Experience**](#section-20-contributing-to-open-source-to-gain-experience)
@@ -3611,6 +3613,20 @@ To Do
 - Will you respect people around you?
 - Salary and benefits?
 - Is your decision based on desperation?
+
+**[⬆ back to top](#table-of-contents)**
+
+### Getting A Raise
+
+- Ask for a raise
+- Show. Don't tell
+
+**[⬆ back to top](#table-of-contents)**
+
+### Negotiation Master
+
+- [StackOverflow Developer Salary](https://stackoverflow.com/jobs/salary?utm_source=Iterable&utm_medium=email&utm_campaign=salary-calculator-2018)
+- [How to Negotiate Your Salary](https://www.youtube.com/watch?v=XY5SeCl_8NE&feature=youtu.be)
 
 **[⬆ back to top](#table-of-contents)**
 
